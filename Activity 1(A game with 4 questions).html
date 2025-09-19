@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html id="mainContent">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="apple-mobile-web-app-title" content="Nearpod Web">
+		<title>Nearpod Lessons: Download ready-to-use content for education</title>
+        <meta name="description" content="Engage and assess your students in every lesson!">
+		<meta name="title" content="Nearpod Lessons: Download ready-to-use content for education">
+		<meta name="viewport" content="width=device-width, maximum-scale=1.0, user-scalable=no, initial-scale=1.0, minimal-ui">
+        <meta property="al:ios:url" content="fb265911660250390://applinks" />
+        <meta property="al:ios:app_store_id" content="523540409" />
+        <meta property="al:ios:app_name" content="Nearpod" />
+        <meta property="og:title" content="Nearpod" />
+        <meta property="og:type" content="website" />
+        <meta name="apple-itunes-app" content="app-id=523540409">
+
+		<!--<link href='http://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'>-->
+		<link rel="icon" href="//html.nearpod.com/favicon.ico">
+
+        <!-- PWA -->
+        <noscript>
+            <h2>Javascript Disabled</h2>
+        </noscript>
+
+        <link rel="manifest" href="//html.nearpod.com/manifest.json">
+        <!-- PWA Chrome, Firefox OS and Opera -->
+        <meta name="theme-color" content="#06AAFF">
+        <link rel="icon" href="//html.nearpod.com/offline/img/icons/android/android-launchericon-48-48.png">
+        <link rel="icon" href="//html.nearpod.com/offline/img/icons/android/android-launchericon-72-72.png">
+        <link rel="icon" href="//html.nearpod.com/offline/img/icons/android/android-launchericon-96-96.png">
+        <link rel="icon" href="//html.nearpod.com/offline/img/icons/android/android-launchericon-144-144.png">
+        <link rel="icon" href="//html.nearpod.com/offline/img/icons/android/android-launchericon-192-192.png">
+        <link rel="icon" href="//html.nearpod.com/offline/img/icons/android/android-launchericon-512-512.png">
+        <!-- PWA Safari -->
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="#06AAFF">
+        <meta name="apple-mobile-web-app-title" content="Nearpod">
+        <link rel="apple-touch-icon" href="//html.nearpod.com/offline/img/icons/ios/ios-appicon-180-180.png">
+        <!-- PWA IE -->
+        <meta name="msapplication-TileImage" content="//html.nearpod.com/offline/img/icons/android/android-launchericon-144-144.png">
+        <meta name="msapplication-TitleColor" content="#06AAFF">
+        <meta name="msapplication-square70x70logo" content="//html.nearpod.com/offline/img/icons/windows/windowsphone-storelogo-70-70.png">
+        <meta name="msapplication-square150x150logo" content="//html.nearpod.com/offline/img/icons/windows10/Square150x150Logo.scale-100.png">
+        <meta name="msapplication-square310x310logo" content="//html.nearpod.com/offline/img/icons/windows10/Square310x310Logo.scale-100.png">
+        <meta name="msapplication-wide310x150logo" content="//html.nearpod.com/offline/img/icons/windows10/Wide310x150Logo.scale-100.png">
+
+        <!-- Force use of Google FedCM API -->
+        <meta name="google-signin-use_fedcm" content="true">
+
+		<style>
+			#veil{position:absolute;top:0;left:0;height:100%;width:100%;background:#000;display:none;}
+			#loading{position:absolute;top:0;left:0;bottom:0;right:0;height:90px;width:20%;margin:auto;text-align:center}
+			progress{background-color:#f3f3f3;color:#ff7e00;border:0;height:14px;width:100%;min-width:150px}
+			progress[value]::-webkit-progress-value{background:#ff7e00}
+			progress[value]::-moz-progress-bar{background:#ff7e00}
+			/* Full Width Progress Bar */
+			#contentBar {
+			width:100%;
+			height:5px;
+			margin:50px auto;
+			background:#000;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			height: 10px;
+			margin: auto;
+			}
+			.fullwidth .expand {
+			width:100%;
+			height:1px;
+			margin:2px 0;
+			background:#ff7e00;
+			position:absolute;
+			box-shadow:0px 0px 10px 1px rgba(255,137,23,0.7);
+			}
+			.fullwidth .expand {
+			-moz-animation:fullexpand 2.5s ease-out forwards;
+			-webkit-animation:fullexpand 2.5s ease-out forwards;
+			}
+			@-moz-keyframes fullexpand {
+			0%  { transform:translate3d(-100%,0,0);}
+			100%{ transform:translate3d(-5%,0,0);}
+			}
+			@-webkit-keyframes fullexpand {
+			0%  { -webkit-transform:translate3d(-100%,0,0);}
+			100%{ -webkit-transform:translate3d(-5%,0,0);}
+			}
+
+            .characters{
+                position:absolute;
+                top:0;
+                left:0;
+                right:0;
+                bottom:0;
+                margin:auto;
+                transform: translate3d(0,-50px,0) scale(.5,.5);
+                -webkit-transform: translate3d(0,-50px,0) scale(.5,.5);
+                transform-position: center;
+                -webkit-transform-origin: 50% 250px;
+                transform-origin: 50% 250px;
+            }
+
+            @media screen and (max-width:768px){
+                .characters{
+                    transform: translate3d(0,-50px,0) scale(.2,.2);
+                    -webkit-transform: translate3d(0,-50px,0) scale(.2,.2);
+                }
+            }
+		</style>
+    <base href="/"></base>
+        <!-- SMARTLING_CONTEXT_PLUGIN_LIBRARY -->
+	</head>
+	<body class="mainBody">
+	    <div data-ng-app="nearpodApp" no-drag ng-controller='appCo' np-release-events resize id="NpApp" ng-cloak>
+            <!-- <np-install-app></np-install-app> -->
+            <smart-app-banner></smart-app-banner>
+            <np-loader-bar></np-loader-bar>
+            <main-topbar ng-show="hasToolbar"></main-topbar>
+            <main-sidebar ng-show="hasToolbar"></main-sidebar>
+			<div class='viewContainer' ng-controller='viewContainerCo' ng-class="getViewClass()" ng-style="getViewContainerStyle()">
+				<ng-view></ng-view>
+                <presentation-settings></presentation-settings>
+            </div>
+			<mail-directive></mail-directive>
+            <share-modal></share-modal>
+            <share-modal-author></share-modal-author>
+            <create-content-modal ng-show="hasToolbar"></create-content-modal>
+            <google-slides-unathorized-create-modal ng-show="hasToolbar"></google-slides-unathorized-create-modal>
+            <import-content-upload-files-modal ng-show="hasToolbar"></import-content-upload-files-modal>
+            <np-webcam></np-webcam>
+			<top-informations-controller></top-informations-controller>
+			<loader-controller></loader-controller>
+			<loading-cover></loading-cover>
+			<np-information></np-information>
+			<message-directive></message-directive>
+			<confirms-controller></confirms-controller>
+            <modals-controller></modals-controller>
+			<header-message></header-message>
+			<info-directive></info-directive>
+            <terms-and-conditions></terms-and-conditions>
+			<np-user-upgrade ng-if="showUpgrade"></np-user-upgrade>
+            <library-onboarding ng-if="onboardingSv.showOnboarding"></library-onboarding>
+            <!-- <np-ayce-offer ng-if="ayceOfferSv.offerAyce"></np-ayce-offer> -->
+			<!-- <div style="word-wrap: break-word;position: absolute;top: 0;color: black;background-color:white;font-size: 12px;z-index: 100000;width: 33%;height:100%;overflow-y:scroll" ng-bind-html="debugText"></div> -->
+			<!-- <div style="word-wrap: break-word;position: absolute;top: 0;color: black;background-color:white;font-size: 12px;z-index: 100000;width: 33%;height:100%;overflow-y:scroll" ng-bind-html="debugText"></div> -->
+		</div>
+		<div id="veil" style="z-index: 5000">
+
+			<div id="contentBar" class="fullwidth">
+				<span class="expand" id="loadingLine"></span>
+			</div>
+		</div>
+		<div id="fb-root"></div>
+		<!-- START CSS -->
+<link rel="stylesheet" href="//html.nearpod.com/6.05.1757010350/css.css">
+		<!-- END CSS -->
+		<script>
+			var GLOBAL_BASE_PATH = '';
+		</script>
+
+        <script src="https://api.nearpod.com/v1/ct/translations?component=100"></script>
+        <script src="https://www.nearpod.com/assets/resources.js"></script>
+         <script  src="//html.nearpod.com/3rd_parties/lottie.js"></script>
+         <script  src="//html.nearpod.com/3rd_parties/utilities.js"></script>
+         <script  src="//html.nearpod.com/3rd_parties/sentry/browser.min.js"></script>
+         <script  src="//html.nearpod.com/3rd_parties/sentry/integrations.min.js"></script>
+		<!-- START JS -->
+<script type="text/javascript">var lang = String(navigator.language || navigator.userLanguage).split('-')[0];switch(lang){case 'es':break;case 'pt':break;case 'en-GB':break;case 'fr':break;case 'tr':break;case 'de':break;default:lang = 'en';break;}var js_script = document.createElement('script');js_script.type = 'text/javascript';js_script.src ='//html.nearpod.com/6.05.1757010350/np_'+lang+'.js';document.getElementsByTagName('head')[0].appendChild(js_script);</script>
+		<!-- END JS -->
+		<!-- endbuild -->
+		<script>
+        </script>
+
+        <script>
+            (function() {
+                var href = window.location.href;
+                var lastChar = href.substr(href.length-1);
+                if(lastChar === '#'){
+                    var path = window.location.href.substr(0,href.length -1);
+                    if(history){
+                        history.replaceState('', document.title, path);
+                    }
+                }
+            }())
+        </script>
+
+		<script>
+
+			window.fbAsyncInit = function() {
+				FB.init({appId: '265911660250390',status : true, xfbml: false});
+			};
+            document.addEventListener('DOMContentLoaded',function(event) {
+                /*google.load('search','1',{
+                    callback: googleLoaded
+                });*/
+
+            });
+            /*document.addEventListener('DOMContentLoaded',function(event) {
+				(function(d, s, id){
+					var js, fjs = d.getElementsByTagName(s)[0];
+					if (d.getElementById(id)) {return;}
+					js = d.createElement(s); js.id = id;js.async = true;
+					js.src = "https://connect.facebook.net/en_US/all.js";
+					fjs.parentNode.insertBefore(js, fjs);
+				}(document, 'script', 'facebook-jssdk'));
+				(function() {
+					var po = document.createElement('script'); po.type = 'text/javascript';po.async = true;
+					po.src = 'https://apis.google.com/js/client:plusone.js';
+					var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+				})();
+                window.___gcfg = {
+                    parsetags: 'explicit'
+                };
+                (function() {
+					var po = document.createElement('script'); po.type = 'text/javascript';po.async = true;
+                    po.src = 'https://apis.google.com/js/platform.js';
+					var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+                })();
+				window.twttr = (function (d,s,id) {
+					var t, js, fjs = d.getElementsByTagName(s)[0];
+					if (d.getElementById(id)) return; js=d.createElement(s); js.id=id;
+                    js.src="//html.nearpod.com/3rd_parties/twitter/widgets.js"; fjs.parentNode.insertBefore(js, fjs);
+					return window.twttr || (t = { _e: [], ready: function(f){ t._e.push(f) } });
+				}(document, "script", "twitter-wjs"));
+            (function(d){
+                var f = d.getElementsByTagName('SCRIPT')[0], p = d.createElement('SCRIPT');
+                p.type = 'text/javascript';
+                p.async = true;
+                p['data-pin-build'] = 'parsePinterestButtons';
+                p.src = '//assets.pinterest.com/js/pinit.js';
+                f.parentNode.insertBefore(p, f);
+            }(document));
+
+			});
+			*/
+            window.___gcfg = {
+                parsetags: 'explicit'
+            };
+        </script>
+        <script>
+            var trackOutboundLink = function(url) {
+                ga('send', 'event', 'outbound', 'click', url, {'hitCallback':
+                        function () {
+                            window.open(url,'_blank');
+                        }
+                });
+            };
+        </script>
+        <script type="text/javascript" src="https://js.live.net/v7.2/OneDrive.js" async></script>
+        <script> if (Sentry) { Sentry.init({ dsn: "https://608ce611fb71860b11f0ee4ee12b4c81@o245736.ingest.sentry.io/4506298438254592", integrations: [ new Sentry.Integrations.Angular() ], environment: "prod", release: "7afa22f0", tracesSampleRate: 0.003, normalizeDepth: 10 })} else { console.log("Could not load Sentry")} </script>
+	</body>
+</html>

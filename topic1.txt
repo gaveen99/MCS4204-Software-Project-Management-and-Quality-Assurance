@@ -1,0 +1,695 @@
+MASTER OF COMPUTER SCIENCE/
+MASTER OF SCIENCE IN COMPUTER SCIENCE
+
+MCS 4204 –
+Software Project Management
+and Quality Assurance
+Dr. Thushani Weerasinghe
+Senior Lecturer, UCSC
+UNIVERSITY OF COLOMBO SCHOOL OF COMPUTING
+
+About The Course
+• Credits – 03
+• 04 Lecture Hours per week: 30 Hours (7-8 weeks)
+• Practical (Activity) Hours: 15 Hours
+• Evaluation – 40% Assignments, 60% Exam Paper
+• Assignments =~ 5 (In-class tests and Take Home
+Assignments)
+• Exam Paper – 02 Hours
+• 4 Compulsory Questions
+Master of Computer Science/ Master of Science in Computer Science
+
+References/Recommended Text
+• A Guide to the Project Management Body
+of Knowledge (PMBOK® Guide)—Sixth
+Edition, 2017 and Seventh Edition, 2021.
+• Information Technology Project
+Management, 8th Edition
+• Software Quality Assurance: From Theory
+to Implementation 1st Edition (ISBN-13:
+978-1285847092, ISBN-10: 1285847091)
+Chapter 1-4 and Chapter 10
+Master of Computer Science/ Master of Science in Computer Science
+
+PMBOK® Guide –
+(https://www.pmi.org/pmb
+ok-guidestandards/foundational/pm
+bok)
+https://www.oreilly.com/libr
+ary/view/a-guideto/9781628256642/
+Master of Computer Science/ Master of Science in Computer Science
+
+Project Management Body of Knowledge
+(PMBOK)
+• Is a widely accepted standard of project
+management.
+• Provides guidelines, rules and characteristics for
+project management
+• When it is consistently applied, it helps you, your
+global peers and your organization to achieve
+professional excellence.
+
+Master of Computer Science/ Master of Science in Computer Science
+
+Course Outline
+1. Introduction to Software Project Management
+
+2 hrs
+
+2. Project Integration Management
+
+2 hrs
+
+3. Project Project Scope Management
+
+2 hrs
+
+4. Project Project Time Management
+
+2 hrs
+
+5. Project Cost Management
+
+2 hrs
+
+6. IT Project Quality Management
+
+4 hrs
+
+7. Project Communications Management
+
+2 hrs
+
+8. Project Human Resource Management
+
+2 hrs
+
+9. Project procurement Management
+
+2 hrs
+
+10. Project Risk management
+
+2 hrs
+
+11. Financial calculations for project appraisals
+
+2 hrs
+
+12. Software
+quality
+assurance
+Master of Computer
+Science/ Master
+of Science in Computer Science
+
+6 hrs
+
+1. Introduction to Software Project
+Management
+After following this section, you should be able to;
+• Define what s/w project management is
+• Compare s/w projects and other types of projects
+• Describe typical issues of s/w projects
+• Define the usual stages of a software project and
+management
+• Identify the stakeholders and their roles
+• Define the success criteria for a s/w project
+Master of Computer Science/ Master of Science in Computer Science
+
+What is a Project?
+A project is a temporary endeavour undertaken
+to create a unique product, service, or result.
+A sequence of unique, complex, and connected
+activities which
+• has a goal or purpose and
+• must be completed by a specific time,
+• should be completed within budget, and
+• according to specification.
+Master of Computer Science/ Master of Science in Computer Science
+
+Project Requirements
+
+Master of Computer Science/ Master of Science in Computer Science
+
+Characteristics of a Project in an
+organization
+• Temporary – every project must have a
+defined start and end in time
+• Has a defined scope and resources
+
+• Unique – not a routine activity, there should
+be a goal, a specific set of operations to
+achieve the goal
+• Business Value Creation (net quantifiable benefit)– New
+assets, brand recognition, drive change in the
+organization
+Master of Computer Science/ Master of Science in Computer Science
+
+Project Termination
+• Terminates when the
+• objectives have been achieved or
+• because its objectives will not/ cannot be met,
+or
+• need for the project no longer exists.
+• The decision to terminate a project requires
+approval and authorization by an appropriate
+authority.
+Master of Computer Science/ Master of Science in Computer Science
+
+Examples for Projects
+• Writing a special report
+• Setting up a sales kiosk for a professional accounting
+meeting
+• Developing a software
+• Writing a new piano piece
+• Designing a new product
+The outcome of a project in an organization may result
+in a standard product or a process for the organization
+Master of Computer Science/ Master of Science in Computer Science
+
+Exercise 1
+i)
+
+Give three examples for projects and routine
+activities and discuss how projects differ from routine
+activities.
+
+ii) Which of the following is a project?
+A. Running a donut shop
+B. Building another library in your area, which might
+take a long time
+C. Keeping a network up and running in a university
+department
+D. Running a warehouse
+Master of Computer Science/ Master of Science in Computer Science
+
+Characteristics of a Software Project
+• Non-routine tasks are involved
+• Planning is required
+• Specific objectives are to be met or a specific
+product is to be created
+• The project has a pre-determined time plan
+• Work is often carried out for someone other
+than yourself
+Master of Computer Science/ Master of Science in Computer Science
+
+Characteristics of a S/W Project contd..
+• Work involves several specialism
+• People are formed into temporary groups to carry
+out the task
+• Work is carried out in several phases
+• The resources that are available for use on the
+project are constrained
+• The project can be large or complex
+More the factors apply  the more difficult the task will be.
+More staff needs  requires more additional coordination
+Master of Computer Science/ Master of Science in Computer Science
+
+Exercise 2
+• What is the difference between software
+projects and other types of projects?
+
+Master of Computer Science/ Master of Science in Computer Science
+
+Software Projects Vs Other Projects
+• Invisibility
+• Physical artefacts such as bridges and roads are
+visible unlike a software product
+
+• Conformity
+• Other projects interact with physical materials
+that do not change rapidly while software projects
+interact only with human clients. People can
+change their attitudes and beliefs easily.
+
+Master of Computer Science/ Master of Science in Computer Science
+
+Software Projects Vs Other Projects
+Contd.
+• Complexity
+• Software projects are more complex due to the
+Complexity factors and characteristics they
+possess
+
+• Flexibility
+• Software can be changed easily. Therefore, subject
+to change according to the needs or changes of
+other components
+
+Master of Computer Science/ Master of Science in Computer Science
+
+Classification of S/W Projects
+• Objective-based Vs Product-based
+• Compulsory user-based Vs Voluntary user-based
+• Information Systems Vs Embedded Systems
+
+Master of Computer Science/ Master of Science in Computer Science
+
+Objective
+based Vs Product based
+• An on-line voting system for general public to select the most
+popular sportsman of the year
+• An on-line educational game for primary students
+
+Exercise 3: Categorize the following projects into
+two groups: Objective-based projects and Productbased projects
+
+1. A payroll system for a business organization
+2. An information and news website for a government ministry
+3. A software system for a survey to determine the mobile
+phone usage of selected government servants (in order to
+consider for a communication allowance)
+
+Compulsory User-based Vs Voluntary Userbased
+• An on-line home delivery/take away food ordering
+system
+• A payroll system for a business organization
+Exercise 4: Categorize the following projects into
+Compulsory User-based projects and Voluntary Userbased projects
+1.
+2.
+3.
+4.
+5.
+
+An information and news website for a government ministry
+An on-line educational game for primary students
+A CCTV camera-based surveillance system for a defense authority
+An on-line registration system for internal students at a university
+An on-line market survey system for a multi-national company
+
+Information Systems Vs Embedded Systems
+• Information systems –enable staff to carry out office
+processes
+• E.g. Stock control system
+• Embedded systems- control machines
+• E.g. A system to control air conditioning
+equipment in a building
+• Systems having elements of both
+• E.g. A stock control system which can control an
+automated warehouse
+Master of Computer Science/ Master of Science in Computer Science
+
+What is Project Management?
+Refers to the application of knowledge, skills, tools and
+techniques to achieve specific targets within specified budget
+and time constraints.
+1. Planning – what is to be done
+2. Organizing – making arrangements
+3. Directing – giving instructions
+4. Monitoring – checking on progress
+5. Controlling – taking actions to remedy hold-ups
+6. Innovating – coming up with new solutions
+7. Representing – liaising with users
+Master of Computer Science/ Master of Science in Computer Science
+
+A Set of PM Activities
+• Identifying project requirements
+• Addressing the various needs, concerns, and
+expectations of stakeholders
+• Establishing and maintaining active
+communication with stakeholders
+• Managing resources
+• Balancing the competing project constraints
+
+Master of Computer Science/ Master of Science in Computer Science
+
+Project Constraints
+Agile Approach
+
+• Major constraints: scope, cost, time, quality, resources
+and risks
+
+Project Management Framework
+
+Master of Computer Science/ Master of Science in Computer Science
+
+Importance of Project Management
+
+Master of Computer Science/ Master of Science in Computer Science
+
+Relationship Among Portfolios, Programs, and
+Projects
+• Portfolio: Projects, programs, subsidiary portfolios, and
+operations managed in a coordinated manner to achieve
+strategic objectives.
+• Program: Related projects, subsidiary programs, and program
+activities managed in a coordinated manner to obtain
+benefits not available from managing them individually.
+• A project may be managed in three separate scenarios:
+• as a stand-alone project (outside a portfolio or program);
+• within a program; or
+• within a portfolio.
+
+• Project management has interactions with portfolio and
+program management when a project is within a portfolio or
+program.
+Master of Computer Science/ Master of Science in Computer Science
+
+Relationship Among Portfolio, Programs, and
+Projects
+
+Master of Computer Science/ Master of Science in Computer Science
+
+Program/Project Mgt. vs Portfolio Mgt.
+• Program and project management focus on doing programs and
+projects the “right” way, and Portfolio management focuses on
+doing the “right” programs or projects at the right time.
+
+Master of Computer Science/ Master of Science in Computer Science
+
+Relationship Among Portfolios, …contd.
+• A portfolio refers to projects, programs, sub-portfolios,
+and operations managed as a group to achieve strategic
+objectives.
+• Project may or may not be part of a program, but a
+program will always have projects.
+• Projects within a program are related through the
+common outcome or collective capability.
+• The projects or programs of the portfolio may not
+necessarily be interdependent or directly related.
+
+Master of Computer Science/ Master of Science in Computer Science
+
+Management of Portfolios, Programs and
+Projects
+• Portfolio management aligns portfolios with
+organizational strategies by selecting the right
+programs or projects, prioritizing the work, and
+providing the needed resources.
+• Program management harmonizes its program
+components and controls interdependencies in
+order to realize specified benefits.
+• Project management enables the achievement of
+organizational goals and objectives
+Master of Computer Science/ Master of Science in Computer Science
+
+Project Mgt Vs Portfolio Mgt
+
+Master of Computer Science/ Master of Science in Computer Science
+
+Organizational Project Management
+
+Master of Computer Science/ Master of Science in Computer Science
+
+Project Life Cycle
+
+PM is accomplished
+through the
+application and
+integration of these
+five major
+processes.
+
+Master of Computer Science/ Master of Science in Computer Science
+
+A set of
+chronological
+phases
+
+The core technical subject matter required for
+effective project management
+Master of Computer Science/ Master of Science in Computer Science
+
+10 Knowledge Areas
+1. Project Integration Management
+2. Project Scope Management
+3. Project Time Management
+4. Project Cost Management
+5. Project Quality Management
+6. Project Human Resource Management
+7. Project Communications Management
+8. Project Risk Management
+9. Project Procurement Management
+10. Project Stakeholder Management
+Master of Computer Science/ Master of Science in Computer Science
+
+Cost and Staffing Level Curve
+
+Master of Computer Science/ Master of Science in Computer Science
+
+Project Phase
+• A project phase is a collection of logically related
+project activities that culminates in the completion
+of one or more deliverables. The phases in a life cycle
+can be described by a variety of attributes.
+
+Master of Computer Science/ Master of Science in Computer Science
+
+Project Phase Attributes
+•
+•
+•
+•
+•
+
+Name (e.g., Phase A, Phase 2, Proposal phase)
+Number (e.g., three phases in the project)
+Duration (e.g., 1 week, 1 month, 1 quarter)
+Resource requirements (e.g., people, buildings, devices,…)
+Entrance criteria for a project to move into a phase (e.g.,
+specified approvals documented, specified documents
+completed), and
+• Exit criteria for a project to complete a phase (e.g.,
+documented approvals, completed documents, completed
+deliverables).
+
+Master of Computer Science/ Master of Science in Computer Science
+
+Phase Gate
+• Also known as phase review, stage gate, kill point, and
+phase entrance or phase exit
+• Held at the end of a phase
+• Where performance and progress are compared to
+project and business documents
+• Decides to;
+• Continue to the next phase,
+• Continue to the next phase with modification,
+• End the project,
+• Remain in the phase, or
+• Repeat the phase or elements of it.
+Master of Computer Science/ Master of Science in Computer Science
+
+Software Project Mgt Methods
+1. Traditional/Waterfall method- best when scope, budget and
+time factors are known
+2. Incremental method (Kanban) - a method that focuses on
+continuous improvement and helps you find the weak spots of
+your workflow (Backlog> To do> Ongoing> Done)
+3. Iterative method (Scrum) - a prescriptive framework employs
+an iterative, incremental approach to optimize predictability
+and control risk
+4. Hybrid method (Scrumban) - a combination of both, that
+actually put the Kanban practices on top of Scrum and makes
+it easy for Scrum teams to focus on continuous improvement
+Master of Computer Science/ Master of Science in Computer Science
+
+Scrum or Kanban, Which is the best?
+
+Master of Computer Science/ Master of Science in Computer Science
+
+What is Scrumban?
+
+Master of Computer Science/ Master of Science in Computer Science
+
+Exercise 5: Select the correct option
+What is the difference between Waterfall method
+and Agile method in S/W project management?
+A. Waterfall is preplanned and so are Agile projects.
+B. Scope is fixed on Agile projects but not on
+Waterfall projects.
+C. Agile plans are just in time, and Waterfall projects
+are preplanned.
+D. They both are project management frameworks.
+Master of Computer Science/ Master of Science in Computer Science
+
+Management Structure for Projects in a
+large organization
+Senior Mgt. group with
+responsibility for system
+development and operation
+(department heads from
+end-user and IT/IS groups)
+
+IS manages and end-user
+managers responsible for
+several projects
+System analysts, SEs and
+other specialists
+responsible for individual
+projects
+Master of Computer Science/ Master of Science in Computer Science
+
+Roles in Project Management
+
+Master of Computer Science/ Master of Science in Computer Science
+
+Project Stakeholders
+• Internal to the project team
+• Be under the direct control of the project leader
+
+• External to the project
+team but within the same
+organization
+• Users of the system who can
+do system testing
+
+• External to the project
+team and the organization
+• Users of the system –
+customers or contractors
+
+Contract Management and Technical Project
+Management
+• Project Manager in Client Organization
+• Contract Supervision
+
+• Project Manager in Software Supplier Org.
+• Technical Management
+
+Master of Computer Science/ Master of Science in Computer Science
+
+Plans, Methods and Methodologies
+• Method- Relates to a type of activity
+• Plan – Takes the method
+• Methodology- Group of methods or
+techniques
+• Planning involves;
+• Selecting a suitable method
+• Convert methods to real activities
+• Define the start and end date of each activity
+• Define who will carry it out
+• Identify what tools and materials will be used
+Master of Computer Science/ Master of Science in Computer Science
+
+Exercise:
+i. Define what project management is.
+ii. Identify the roles in Project
+management
+iii. Describe the major Activities of a
+project
+iv. Describe the Project Life Cycle
+Master of Computer Science/ Master of Science in Computer Science
+
+Project Manager
+1. Describe the role of a project manager.
+2. Identify the essential skills of a project manager.
+3. Is communication skill required? Explain your answer.
+
+Master of Computer Science/ Master of Science in Computer Science
+
+23 August 2025
+
+62
+
+The Role of a
+Project Manager
+
+Project Manager’s
+Sphere of
+Influence
+
+Master of Computer Science/ Master of Science in Computer Science
+
+23 August 2025
+
+63
+
+Role of a PM
+• Leads the project team to meet the project’s objectives
+and stakeholders’ expectations
+• Works to balance the competing constraints on the
+project with the resources available
+• Performs communication roles between the project
+sponsor, team members, and other stakeholders
+• Providing direction and presenting the vision of
+success for the project
+• Using soft skills to balance the conflicting and
+competing goals of the project stakeholders in order
+to achieve consensus.
+Master of Computer Science/ Master of Science in Computer Science
+
+23 August 2025
+
+64
+
+PM’s Communication Skill requirement
+• Demonstrate sufficient verbal, nonverbal and writing skills;
+• Create maintain, and adhere to communications plans and
+schedules;
+• Communicate predictably and consistently;
+• Seek to understand the project stakeholders’
+communication needs;
+• Make communications concise, clear, complete, simple,
+relevant, and tailored;
+• Include important positive and negative news;
+• Incorporate feedback channels;
+• Develop formal and informal networks of relationships
+Master of Computer Science/ Master of Science in Computer Science
+
+23 August 2025
+
+65
+
+Skills Needed by a Project Manager
+•
+
+•
+
+•
+
+Technical project management. The
+knowledge, skills, and behaviours related
+to specific domains of project, program,
+and portfolio management. The
+technical aspects of performing one’s
+role.
+Leadership. The knowledge, skills, and
+behaviours needed to guide, motivate,
+and direct a team, to help an
+organization achieve its business goals.
+Strategic and business management.
+The knowledge of and expertise in the
+industry and organization to enhance
+performance and better delivers
+business outcomes.
+Master of Computer Science/ Master of Science in Computer Science
+
+23 August 2025
+
+66
+
+Master of Computer Science/ Master of Science in Computer Science
+
+23 August 2025
+|
+67
+https://www.nextgeneration.ie
+
+Principles of PM
+• Be diligent, respectful, and
+caring steward
+• Focus on value
+• Build quality into processes
+and deliverables
+• Create a collaborative team
+environment
+• Demonstrate leadership
+behaviours
+• Navigate complexity
+• Optimize risk responses
+Master of Computer Science/ Master of Science in Computer Science
+
+• Effectively engage with
+stakeholders
+• Tailor based on context
+• Embrace adaptability and
+resiliency
+• Recognize, evaluate, and
+respond to system
+interactions
+• Enable change to achieve the
+envisioned future state
+
+

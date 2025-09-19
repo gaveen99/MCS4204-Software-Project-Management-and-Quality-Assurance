@@ -1,0 +1,1661 @@
+9/14/2025
+
+MASTER OF COMPUTER SCIENCE/
+MASTER OF SCIENCE IN COMPUTER SCIENCE
+
+MCS 4204 –
+Software Project Management and Quality
+Assurance
+
+Project Integration Management
+Dr. Thushani A. Weerasinghe
+
+Senior Lecturer
+UCSC
+
+UNIVERSITY OF COLOMBO SCHOOL OF COMPUTING
+
+1
+
+Project Management Process Groups
+
+Master of Computer Science/ Master of Science in Computer Science
+
+13 September
+2025
+
+2
+
+2
+
+1
+
+9/14/2025
+
+Performing Integration on the Project
+• Integration and execution of strategy
+• Understand strategic objectives and ensure the
+alignment of project objectives and results with those
+of the portfolio, program, and business areas.
+• Integration of processes, knowledge and people
+• Guide the team to work together to focus on what is
+really essential at the project level.
+• Integration takes place at three levels: Process,
+Cognitive and Context
+Master of Computer Science/ Master of Science in Computer Science
+
+13 September
+2025
+
+3
+
+3
+
+Project Integration Management
+• It includes the processes and activities to identify, define,
+combine, unify, and coordinate the various processes and
+project management activities within the Project
+Management Process Groups.
+• Making choices about:
+• resource allocation,
+• balancing competing demands,
+• examining any alternative approaches,
+• tailoring the processes to meet the project objectives,&
+• managing the interdependencies among the Project
+Management Knowledge Areas.
+Master of Computer Science/ Master of Science in Computer Science
+
+13 September
+2025
+
+4
+
+4
+
+2
+
+9/14/2025
+
+Project Integration Management Processes
+1. Develop Project Charter
+2. Develop Project Management Plan
+3. Direct and Manage Project Work
+4. Manage Project Knowledge
+5. Monitor and Control Project Work
+6. Perform Integrated Change Control
+7. Close Project or Phase
+
+Master of Computer Science/ Master of Science in Computer Science
+
+13 September
+2025
+
+5
+
+5
+
+Importance of Project Integration
+Management
+• Ensuring that the deliverable due dates of the product,
+service, or result;
+• Aligning project life cycle and the benefits management
+plan;
+• Providing a project management plan to achieve the
+project objectives;
+• Ensuring the creation and the use of the appropriate
+knowledge to and from the project as necessary;
+• Managing the performance and changes of the
+activities in the project management plan;
+Master of Computer Science/ Master of Science in Computer Science
+
+13 September
+2025
+
+6
+
+6
+
+3
+
+9/14/2025
+
+Importance of Project Integration…contd.
+• Making integrated decisions regarding key changes
+impacting the project;
+• Measuring and monitoring the project’s progress and
+taking appropriate action to meet project objectives;
+• Collecting data on the results achieved, analyzing the
+data to obtain information, and communicating this
+information to relevant stakeholders;
+• Completing all the work of the project and formally
+closing each phase, contract, and the project as a
+whole; and
+• Managing phase transitions when necessary.
+Master of Computer Science/ Master of Science in Computer Science
+
+13 September
+2025
+
+7
+
+Master of Computer Science/ Master of Science in Computer Science
+
+13 September
+2025
+
+8
+
+7
+
+8
+
+4
+
+9/14/2025
+
+Project Initiation
+• Starting a new project
+or a new phase of an
+existing project
+• Obtaining authorization
+to start the
+project/phase
+
+9
+
+Objectives of the Initiation phase
+• Align the stakeholders’ expectations with the
+project’s purpose
+• Provide visibility about the scope and objectives,
+ensuring that project will achieve the expectations
+• Set the vision of the project—what is needed to be
+accomplished.
+• Create a shared understanding of success criteria
+• Reduce the overhead of involvement
+• Improve deliverable acceptance, customer
+satisfaction, and other stakeholder satisfaction.
+
+10
+
+5
+
+9/14/2025
+
+Major Activities of Project Initiation
+
+/PID
+
+11
+
+“What” is this project
+going to create?
+
+Why do we need
+to do this? What
+is the benefit or
+business value
+this can create?
+
+What strategic goal or objectives it will
+achieve?
+
+12
+
+6
+
+9/14/2025
+
+Need Assessment
+Identifying opportunities, business requirements,
+or problems that need to be solved.
+1. Market Demand
+2. Strategic Opportunity/Business Need
+3. Customer Request
+4. Technological Advance
+5. Legal Requirement
+6. Environmental Consideration
+7. Social Need
+13
+
+Purpose of Project Evaluation
+To find;
+• the value a
+project can
+offer,
+• the benefits
+it can
+deliver, and
+• how well it
+aligns with
+business
+strategy.
+
+14
+
+7
+
+9/14/2025
+
+.
+
+15
+
+Portfolio Mgt. and Project Mgt.
+• Program and project management focus on doing programs
+and projects the “right” way, and Portfolio management
+focuses on doing the “right” programs.
+
+Master of Computer Science/ Master of Science in Computer Science
+
+16
+
+8
+
+9/14/2025
+
+Benefit Map
+
+17
+
+Enabler/Goal → The system to be implemented
+Intermediate Benefit/Project Outcome → What the system enables
+End Benefit → The strategic business impact
+
+18
+
+9
+
+9/14/2025
+
+Steps to Create a Benefit Map
+1. Identify the Strategic Business Goals
+2. Define the Business Success Factors
+3. Identify Project Outcomes
+4. Perform the Mapping
+
+19
+
+Business Case Document
+• Justifies the start-up of a project
+• Includes a description of the business problem or
+opportunity
+• Provides the costs and benefits of each alternative
+solution and the recommended solution for approval.
+• Justifies expenditure on the project
+• is referred to frequently during the project, to
+determine whether it is currently on track
+• Success of the project is measured against the ability to
+meet the objectives defined in the Business Case
+• Preparation of a Business Case is critical to the success
+of the project.
+20
+
+10
+
+9/14/2025
+
+Business Case Document: List of Content
+1. Introduction and background to the proposal
+2. The proposed project
+3. The market: estimated demand, and likely competitors
+4. Organizational and operational infrastructure
+5. The benefits
+6. Outline implementation plan
+7. Costs: schedule of expected costs for planned activities
+8. The financial case: income and costs are analyzed
+9. Risks: business risks
+10. Management plan: Project portfolio management
+
+21
+
+Feasibility study
+• An exercise that involves documenting each
+of the potential solutions to a particular
+business problem or opportunity.
+• Purpose: identify the likelihood of one or
+more solutions meeting the stated business
+requirements – to decide whether the
+solution will deliver the expected outcome
+• Outcome: a confirmed solution for
+implementation.
+22
+
+11
+
+9/14/2025
+
+23
+
+Feasibility Study Report
+• Describes business problem or opportunity
+• Documents the business requirements for a
+solution
+• Identifies all of the alternative solutions available
+• Reviews each solution to determine its feasibility
+• Lists any risks and issues with each solution
+• Chooses a preferred solution for implementation
+• Documents the results in a feasibility report
+
+24
+
+12
+
+9/14/2025
+
+• Continue from here
+
+Master of Computer Science/ Master of Science in Computer Science
+
+13 September
+2025
+
+25
+
+25
+
+Project Assessment and Selection
+• Project selection is generally the responsibility of
+Portfolio Managers, and Steering Committees -in
+smaller companies, Presidents and Vice-Presidents.
+• A high-level assessment of the project to see
+whether it is worthwhile to proceed with the project.
+
+Master of Computer Science/ Master of Science in Computer Science
+
+13 September
+2025
+
+26
+
+26
+
+13
+
+9/14/2025
+
+Project Assessment
+1. Strategic assessment
+• To see whether the project will fit in the strategic
+planning of the whole organization
+
+2. Technical assessment
+• To determine whether it is desirable to carry out
+the development and operation of the software
+system
+
+3. Economic assessment
+• To decide which of the several alternative projects
+has a better success rate, and a higher turnover
+27
+
+Strategic Assessment
+• Used to assess whether a project fits in the longterm goal of the organization
+• Evaluates individual projects against the strategic
+plan or the overall business objectives
+• carried out by senior management
+• Programme management - Suitable when
+managing a set of related projects
+• Portfolio management - Suitable for strategically
+assessing, selecting, and prioritizing a broad
+range of projects and programmes.
+28
+
+14
+
+9/14/2025
+
+Model of information flow
+
+Master of Computer Science/ Master of Science in Computer Science
+
+13 September
+2025
+
+29
+
+29
+
+QUIZ
+“Benefit Map” is a tool used in the project initiation phase. It does
+NOT help to,
+(a)map the organization’s business strategy with the benefits to be
+derived from the project outputs.
+(b)match the project deliverables with project objectives.
+(c) assure that the user requirements are met at the end of the
+project.
+(d)convince the stakeholders of what benefits the project will bring.
+(e)depict the alignment of project deliverables with the expected
+business goals.
+
+30
+
+15
+
+9/14/2025
+
+Technical Assessment
+• Identifies functions that the software is expected
+to perform
+• Evaluates whether the required functionality can
+be achieved with current or affordable
+technologies
+• Considers the organizational policy on providing
+technical infrastructure
+• Prepares the strategic information system plan
+(SISP) of the organization
+• Identifies any constraints imposed by the SISP
+31
+
+Strategic Information System Plan
+
+SISP
+
+32
+
+16
+
+9/14/2025
+
+https://www.sciencedirect.com/science/article/abs/pii/S0963868700000299
+
+33
+
+Economic Assessment
+• Considers whether the project is the best
+among other options
+• Prioritizes projects – can allocate resources
+more effectively
+• Methods
+• Cost-benefit analysis -NPV and IRR
+• Cash flow forecasting
+
+34
+
+17
+
+9/14/2025
+
+Cost-benefit analysis
+• Net benefit = Benefits – Costs
+• Costs
+• Development cost – staff payments, infrastructure
+• Set up cost- new infrastructure, staff recruitment and
+training
+• Operational cost – to operate the system after installation
+• Maintenance cost – for updates or enhancements
+
+• Benefits
+• Quantified and valued – sales income
+• Quantified and but not valued– decrease in # of complains
+• Identified but not easily quantified – public approval of the
+organization
+35
+
+Cash Flow Forecasting
+• What?
+• Estimation of net profit (cash flow) over
+time
+• Why?
+• Estimated net-benefits over the estimated
+costs is not sufficient
+• Need detailed estimation of benefits and
+costs versus time
+36
+
+18
+
+9/14/2025
+
+Typical product life cycle cash flow
+
+• Not easy to estimate future cash flows accurately.
+• Need to revise the forecast from time to time
+
+37
+
+Solutions: Cost-benefit Evaluation
+Techniques
+• Discounted cash flow analysis
+• Net present value
+• Internal Rate of Return
+
+38
+
+19
+
+9/14/2025
+
+Net present value
+• Takes into account the profitability of a
+project and the timing of the cash flows
+
+Present Value = Value in year t
+(1+r) t
+r – discount rate expressed as a decimal value
+t – number of years into the future that cash
+flow occurs
+39
+
+Net present value …contd.
+• Discount rate is the annual rate by which we
+discount future earning
+• e.g., If Discount Rate is 10% and the total
+return of an investment in a year is Rs.110, the
+present value of the investment is;
+110/(1+(10/100))=110/1.1=100
+• Ex1. If Discount Rate is 20% and the total
+expected return on an investment in a year is
+Rs.24,000, what would be the present value?
+
+40
+
+20
+
+9/14/2025
+
+Activity
+If some investment project promises to pay
+$100 per year for 3 years, at an interest rate of
+5%, then what is the present value of that
+project?
+PV= $100/(1.05)+$100/(1.05)2+$100/(1.05)3
+• =$272.32
+
+Master of Computer Science/ Master of Science in Computer Science
+
+13 September
+2025
+
+41
+
+41
+
+Discount factor
+
+1
+(1+r) t
+
+r = discount rate and t=number of years
+
+• PV of a cash flow (Discounted cash flow )
+= Cash Flow x Discount Factor
+• NPV of project = ∑ Discounted Cash Flows
+42
+
+21
+
+9/14/2025
+
+Exercise 2
+• Calculate the NPV for each of the project A and
+B using each of the discount rates 10% and 8%
+Year
+
+Project A
+
+Project B
+
+0
+
+-100,000
+
+-100,000
+
+1
+
+10,000
+
+60,000
+
+2
+
+20,000
+
+40,000
+
+3
+
+40,000
+
+30,000
+
+4
+
+100,000
+
+20,000
+
+Net profit
+43
+
+Year
+
+0
+
+Project A
+– Cash
+Flows
+(Rs)
+-100,000
+
+Discount Discount Project Discounted
+factor at ed Cash B – Cash Cash Flow
+10%
+Flow
+Flows
+(Rs)
+1
+?
+-100,000
+?
+
+1
+
+10,000
+
+0.9091
+
+?
+
+60,000
+
+?
+
+2
+
+20,000
+
+0.8264
+
+?
+
+40,000
+
+?
+
+3
+
+40,000
+
+0.7513
+
+?
+
+30,000
+
+?
+
+4
+
+100,000
+
+0.6830
+
+?
+
+20,000
+
+?
+
+Net
+50,000
+Profit
+
+NPV
+
+50,000
+
+?
+
+?
+
+44
+
+22
+
+9/14/2025
+
+Year
+
+0
+
+Project A
+– Cash
+Flows
+(Rs)
+-100,000
+
+Discount Discounted Project Discounted
+factor at Cash Flow B – Cash Cash Flow
+10%
+Flows
+(Rs)
+1
+-100,000
+-100,000 -100,000
+
+1
+
+10,000
+
+0.9091
+
+9,091
+
+60,000
+
+54,546
+
+2
+
+20,000
+
+0.8264
+
+16,528
+
+40,000
+
+33,056
+
+3
+
+40,000
+
+0.7513
+
+30,052
+
+30,000
+
+22,539
+
+4
+
+100,000
+
+0.6830
+
+68,300
+
+20,000
+
+13,660
+
+Net 50,000
+Profit
+
+50,000
+
+NPV
+
+23,971
+
+23,801
+
+45
+
+Year
+
+0
+
+Project A
+– Cash
+Flows
+(Rs)
+-100,000
+
+Discount Discount Project Discounted
+factor at ed Cash B – Cash Cash Flow
+8%
+Flow
+Flows
+(Rs)
+1
+?
+-100,000
+?
+
+1
+
+10,000
+
+0.9259
+
+?
+
+60,000
+
+?
+
+2
+
+20,000
+
+0.8573
+
+?
+
+40,000
+
+?
+
+3
+
+40,000
+
+0.7938
+
+?
+
+30,000
+
+?
+
+4
+
+100,000
+
+0.7350
+
+?
+
+20,000
+
+?
+
+Net
+50,000
+Profit
+
+NPV
+
+50,000
+
+?
+
+?
+
+46
+
+23
+
+9/14/2025
+
+Year
+
+0
+
+Project A
+– Cash
+Flows
+(Rs)
+-100,000
+
+Discount Discount Project Discounted
+factor at ed Cash B – Cash Cash Flow
+8%
+Flow
+Flows
+(Rs)
+1
+-100,000 -100,000 -100,000
+
+1
+
+10,000
+
+0.9259
+
+9,259
+
+60,000
+
+55,554
+
+2
+
+20,000
+
+0.8573
+
+17,146
+
+40,000
+
+34,292
+
+3
+
+40,000
+
+0.7938
+
+31,752
+
+30,000
+
+23,814
+
+4
+
+100,000
+
+0.7350
+
+73,500
+
+20,000
+
+14,700
+
+Net
+50,000
+Profit
+
+NPV
+
+50,000
+
+31,657
+
+28,360
+
+47
+
+Exercise: Find NPV at 6% and 10%
+Project
+
+Year 0
+
+Year 1
+
+Year 2
+
+Year 3
+
+A
+
+$1,000
+
+$600
+
+$400
+
+$300
+
+B
+
+$1,000
+
+$300
+
+$500
+
+$600
+
+Which project should be selected?
+
+Master of Computer Science/ Master of Science in Computer Science
+
+14 September
+2025
+
+48
+
+48
+
+24
+
+9/14/2025
+
+Issues with NPV
+• Choosing an appropriate discount rate is
+difficult
+• Ensuring that the rankings of projects are not
+sensitive to small changes in discount rate
+• NPV might not be directly comparable with
+earnings from other investments or the costs
+of borrowing capital.
+
+49
+
+Internal Rate of Return
+(IRR)
+• A discount rate results in an NPV of zero
+• Estimates the profitability of potential
+investments
+• Can be directly comparable with interest rates.
+• Use IRR or XIRR functions in Excel
+• Disadvantage –
+• does not indicate the absolute size of the return
+• In some cases, it is possible to find more than one rate
+of return that will produce a zero NPV.
+
+50
+
+25
+
+9/14/2025
+
+•
+
+In real life, you would find many
+projects that have more cash
+outflows in addition to initial cash
+outflow. In such cases there may be
+more than one discount rate that can
+result in Zero NPV of those projects
+and there may also be a case where
+there is no discount rate that will
+result in zero NPV. So, you can expect
+strange results when you deal with
+nonconventional cash flows. But NPV
+does not have this problem and gives
+theoretically correct decisions for
+projects with non conventional cash
+flows. So you should not get upset if
+you come across projects with non
+conventional cash flows because NPV
+rule still apply and you can always go
+with that.
+
+https://www.capitalbudgetingtechniques.com/multiple-irr/
+Master of Computer Science/ Master of Science in Computer Science
+
+13 September
+2025
+
+51
+
+51
+
+Exercise:
+1. What are the differences between NPV and
+IRR?
+2. If findings inform that IRR is greater than the
+market rate of interest (the actual interest
+rate that is paid on deposits and
+investments), then should we invest?
+
+52
+
+26
+
+9/14/2025
+
+Other Cost-benefit Evaluation Techniques
+• Annualized ROI= (average annual
+profit/investment)x100
+• Net profit =Total income – Total costs
+• Benefit-Cost Ratio (BCR) = (benefit/cost)x100
+• Payback period = Time taken to break even
+• Decision trees
+
+53
+
+Exercise
+Calculate the Net Profit, Payback and ROI
+Year
+0
+1
+2
+3
+4
+5
+Net profit
+
+Project 1
+-100,000
+10,000
+10,000
+20,000
+20,000
+100,000
+
+Payback
+A. ROI
+
+4.4
+
+Project 2
+-100,000
+30,000
+30,000
+30,000
+20,000
+350,000
+
+Project 3
+-120,000
+30,000
+30,000
+30,000
+25,000
+50,000
+
+60,000
+12%
+
+54
+
+27
+
+9/14/2025
+
+Exercise
+Calculate the Net Profit, Payback and ROI
+Year
+0
+1
+2
+3
+4
+5
+Net profit
+
+Project 1
+-100,000
+10,000
+10,000
+20,000
+20,000
+100,000
+
+Project 2
+-100,000
+30,000
+30,000
+30,000
+20,000
+350,000
+
+Project 3
+-120,000
+30,000
+30,000
+30,000
+25,000
+50,000
+
+60,000
+
+Payback
+A. ROI
+
+4.4
+
+360,000
+3.5
+72%
+
+45,000
+4.1
+9%
+
+12%
+
+55
+
+Risk evaluation
+• Identify risks and quantify their effects
+• Can prepare a risk matrix
+• Prepare a checklist of possible risks
+• Classify risks according to their impact
+(high[H], medium[M], low[L])
+• Classify risks according to their likelihood
+(high[H], medium[M], low[L], exceedingly
+unlikely[─])
+56
+
+28
+
+9/14/2025
+
+Risk and NPV
+• A risk is an uncertainty attached to the future
+cash flows.
+• NPV  present value of a rupee one year later
+is definitely less than one rupee.
+• NPV with risk  A safe rupee is worthier than
+a risky one.
+• There is risk associated with future cash flows.
+• High risk  use a high discount rate to
+calculate NPV
+57
+
+Risk and Cost-Benefit Analysis
+Sales
+
+High
+Medium
+Low
+Expected
+Income
+
+Annual
+Sales
+income
+(Rs.) -i
+800,000
+650,000
+100,000
+
+Probability- Expected
+p
+Value (Rs) –
+i*p
+0.1
+0.6
+0.3
+
+80,000
+390,000
+30,000
+500,000
+
+58
+
+29
+
+9/14/2025
+
+Risk Analysis Using Decision Trees
+Expansion
+Extend
+
+0.2
+
+NPV
+-100,000
+
+0.8
+No expansion
+75,000
+
+D
+Replace
+
+Extend or replace?
+
+Expansion
+
+No expansion
+
+0.2
+
+250,000
+
+0.8
+-50,000
+
+59
+
+Initiation: Project charter
+
+/PID
+
+60
+
+30
+
+9/14/2025
+
+Develop Project Charter
+• Projects are initiated by an entity external to the
+project such as a sponsor, program or project
+management office (PMO) staff person.
+• A project manager is identified and assigned prior to
+the start of planning.
+• Project Charter is the process of developing a
+document that formally authorizes the existence of a
+project and provides the project manager with the
+authority to apply organizational resources to project
+activities.
+Master of Computer Science/ Master of Science in Computer Science
+
+13 September
+2025
+
+61
+
+61
+
+Develop Project Charter contd.
+• It’s like a partnership between the performing
+organization and the requesting organization.
+• The Project Charter is authorized by a sponsor, not
+the project manager, but he is preferred to be
+participated in developing it.
+• The project charter should be authored by the
+sponsoring entity (product owner).
+• The approval of the project charter formally initiates
+the project.
+Master of Computer Science/ Master of Science in Computer Science
+
+13 September
+2025
+
+62
+
+62
+
+31
+
+9/14/2025
+
+Project Charter Contd.
+• Defines the purpose (goal and objectives) of the
+project -high-level requirements may be
+documented
+• Decides the project duration
+• Identifies the project scope and deliverables
+• Identifies financial and other resource
+requirements
+• Identifies the stakeholders and defines their
+roles and responsibilities.
+63
+
+Project Charter includes
+1. Project vision and objectives
+2. Scope of the project
+3. Project deliverables
+4. The list of project stakeholders and their
+roles and responsibilities
+5. Organizational structure for the project
+6. Project plan
+7. Any risks, issues and assumptions
+
+64
+
+32
+
+9/14/2025
+
+1. Develop Project Charter
+
+Master of Computer Science/ Master of Science in Computer Science
+
+13 September
+2025
+
+65
+
+13 September
+2025
+
+66
+
+65
+
+Project Charter : Inputs
+
+Master of Computer Science/ Master of Science in Computer Science
+
+66
+
+33
+
+9/14/2025
+
+Project Charter: Tools and Techniques
+
+Master of Computer Science/ Master of Science in Computer Science
+
+13 September
+2025
+
+67
+
+13 September
+2025
+
+68
+
+67
+
+Project Charter: Outputs
+
+Master of Computer Science/ Master of Science in Computer Science
+
+68
+
+34
+
+9/14/2025
+
+Project Announcement
+• Publicly announce the start of the project
+• Do a press release or a press conference
+
+• Publish sponsorship and ownership
+• Formally delegate authority to the project
+manager
+• Commit resources to initiate the project
+
+69
+
+Project Team
+
+70
+
+35
+
+9/14/2025
+
+71
+
+Project Management Office (PMO)
+• Organizing meeting and events
+• Resource acquisition and allocation
+• Support monitoring and controlling of project
+• Disseminate project information
+• Communication handling
+• Administrative records handling
+• Reporting lessons learnt
+• Preparing project reports
+Staff: PMO manager, administrator/registrar, secretory,
+assistants…
+72
+
+36
+
+9/14/2025
+
+ACTIVITY TIME
+
+Master of Computer Science/ Master of Science in Computer Science
+
+13 September
+2025
+
+73
+
+73
+
+1. Which of the following is true related to
+Project Charter? It;
+A. is a project initiation document.
+B. explains the importance of the project and how
+it will succeed.
+C. describes how the project is structured and
+executed.
+D. is a report to describe the final evaluation results
+of the project.
+E. is a portfolio reporting all the activities of the
+project.
+
+74
+
+37
+
+9/14/2025
+
+2. The list of major activities that have to be
+carried out during project initiation includes;
+A. develop a business case
+B. identify and quantify activity-based risks
+C. identify and allocate resources
+D. produce ideal activity network
+E. project announcement-press release
+
+75
+
+Master of Computer Science/ Master of Science in Computer Science
+
+13 September
+2025
+
+76
+
+76
+
+38
+
+9/14/2025
+
+2. Develop Project Management Plan
+
+Define, prepare, and coordinate all plan components and
+consolidate them into an integrated project management plan.
+Master of Computer Science/ Master of Science in Computer Science
+
+13 September
+2025
+
+77
+
+77
+
+Develop Project Management
+Plan…contd.
+• It is the process of defining, preparing, and
+coordinating all plan components and consolidating
+them into an integrated project management plan.
+• The project management plan defines how the project
+is executed, monitored and controlled, and closed.
+
+Master of Computer Science/ Master of Science in Computer Science
+
+13 September
+2025
+
+78
+
+78
+
+39
+
+9/14/2025
+
+Project Management Plan
+
+Master of Computer Science/ Master of Science in Computer Science
+
+13 September
+2025
+
+79
+
+79
+
+3. Direct and Manage Project Work
+
+The process of leading
+and performing the
+work defined in the
+PMP and implementing
+approved changes to
+achieve the project’s
+objectives.
+Master of Computer Science/ Master of Science in Computer Science
+
+13 September
+2025
+
+80
+
+80
+
+40
+
+9/14/2025
+
+4. Manage Project Knowledge
+
+The process of using existing knowledge and creating
+new knowledge to achieve the project’s objectives and
+contribute to organizational learning.
+Master of Computer Science/ Master of Science in Computer Science
+
+13 September
+2025
+
+81
+
+81
+
+5. Monitor and Control Project Work
+
+The process of tracking, reviewing, and reporting overall
+progress to meet the performance objectives defined in
+the project management plan.
+Master of Computer Science/ Master of Science in Computer Science
+
+13 September
+2025
+
+82
+
+82
+
+41
+
+9/14/2025
+
+6. Perform Integrated Change Control
+
+The process of reviewing all change requests;
+approving changes and managing changes to
+plans, documents and assets and deliverables.
+Master of Computer Science/ Master of Science in Computer Science
+
+13 September
+2025
+
+83
+
+83
+
+7. Close Project or Phase
+
+The process of finalizing all activities for the
+project, phase, or contract.
+
+Master of Computer Science/ Master of Science in Computer Science
+
+13 September
+2025
+
+84
+
+84
+
+42
+
+9/14/2025
+
+END OF TOPIC 2- INTEGRATION
+MANAGEMENT
+Master of Computer Science/ Master of Science in Computer Science
+
+13 September
+2025
+
+85
+
+85
+
+43
+
+

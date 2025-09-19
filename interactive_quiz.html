@@ -1,0 +1,771 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MCS4204 Interactive MCQ Practice (Lectures 1–3)</title>
+    <style>
+      :root {
+        --bg: #0f172a;         /* slate-900 */
+        --panel: #111827;      /* gray-900 */
+        --card: #1f2937;       /* gray-800 */
+        --muted: #9ca3af;      /* gray-400 */
+        --text: #e5e7eb;       /* gray-200 */
+        --brand: #38bdf8;      /* sky-400 */
+        --accent: #22c55e;     /* green-500 */
+        --warn: #f59e0b;       /* amber-500 */
+        --danger: #ef4444;     /* red-500 */
+        --link: #93c5fd;       /* blue-300 */
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        background: radial-gradient(1200px 800px at 20% 0%, #0b1025 0%, var(--bg) 40%, #0b1025 100%);
+        color: var(--text);
+        font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell,
+          Noto Sans, Helvetica, Arial, Apple Color Emoji, Segoe UI Emoji;
+        line-height: 1.6;
+      }
+      header {
+        padding: 24px 16px;
+        border-bottom: 1px solid #1e293b80;
+        background: linear-gradient(180deg, #0b1228 0%, #0b1228cc 100%);
+        position: sticky;
+        top: 0;
+        z-index: 10;
+      }
+      .wrap { max-width: 1100px; margin: 0 auto; padding: 0 12px; }
+      h1 { margin: 0; font-weight: 700; letter-spacing: 0.2px; }
+      .subtitle { color: var(--muted); margin-top: 4px; font-size: 0.95rem; }
+
+      .controls {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 12px;
+        background: #0b1228aa;
+        border: 1px solid #1f2a44;
+        border-radius: 12px;
+        padding: 16px;
+        margin-top: 14px;
+      }
+      .row { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+      .pill {
+        background: #0e1533;
+        border: 1px solid #1f2a44;
+        border-radius: 999px;
+        padding: 8px 12px;
+        color: var(--text);
+        display: inline-flex; align-items: center; gap: 8px;
+      }
+      .pill input[type="checkbox"] { transform: translateY(1px); }
+      .num input { width: 88px; padding: 6px 10px; border-radius: 8px; border: 1px solid #334155; background: #0b1228; color: var(--text); }
+      .select { display: flex; flex-wrap: wrap; gap: 8px; }
+      .hint { color: var(--muted); font-size: 0.9rem; }
+
+      .actions { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 6px; }
+      button {
+        background: linear-gradient(180deg, #0ea5e9, #0284c7);
+        color: white; border: none; border-radius: 10px;
+        padding: 10px 14px; font-weight: 700; cursor: pointer;
+        box-shadow: 0 8px 28px #0284c755, inset 0 0 0 1px #ffffff20;
+      }
+      button.secondary { background: #0b1228; border: 1px solid #264466; color: #cfe8ff; box-shadow: none; }
+      button.warn { background: linear-gradient(180deg, #f59e0b, #b45309); }
+      button:disabled { opacity: 0.6; cursor: not-allowed; }
+
+      main { padding: 20px 16px 120px; }
+      .panel {
+        background: #0b1228aa;
+        border: 1px solid #1f2a44;
+        border-radius: 16px;
+        padding: 16px;
+      }
+      .grid { display: grid; grid-template-columns: 2fr 1fr; gap: 16px; }
+      @media (max-width: 960px) { .grid { grid-template-columns: 1fr; } }
+
+      .question-card {
+        background: #0e1533;
+        border: 1px solid #1f2a44;
+        border-radius: 14px;
+        padding: 16px;
+        margin-bottom: 12px;
+      }
+      .qhead { display: flex; justify-content: space-between; gap: 10px; align-items: baseline; }
+      .qtitle { font-weight: 700; font-size: 1.05rem; }
+      .topic { color: #a5b4fc; font-size: 0.9rem; }
+      .tags { color: var(--muted); font-size: 0.85rem; }
+
+      .options { display: grid; gap: 8px; margin-top: 10px; }
+      .opt {
+        border: 1px solid #223052; background: #0b1228; color: var(--text);
+        border-radius: 12px; padding: 10px 12px; display: flex; gap: 10px; align-items: start;
+        cursor: pointer; transition: transform 80ms ease;
+      }
+      .opt:hover { transform: translateY(-1px); }
+      .opt input { margin-top: 3px; }
+      .opt.correct { border-color: #14532d; background: #052e1a; }
+      .opt.wrong { border-color: #7f1d1d; background: #2a0e0e; }
+
+      .feedback { margin-top: 8px; font-size: 0.95rem; }
+      .feedback .good { color: var(--accent); }
+      .feedback .bad { color: var(--danger); }
+      .explain { color: #bfdbfe; font-size: 0.92rem; margin-top: 6px; }
+
+      .nav { display: flex; justify-content: space-between; gap: 10px; margin-top: 12px; }
+      .progress { height: 8px; background: #10193a; border-radius: 999px; overflow: hidden; margin-top: 10px; }
+      .bar { height: 100%; width: 0%; background: linear-gradient(90deg, #34d399, #06b6d4); transition: width .2s ease; }
+
+      .stats { background: #0e1533; border: 1px solid #1f2a44; border-radius: 14px; padding: 12px; }
+      .stat { display: flex; justify-content: space-between; color: var(--muted); }
+      .chart { display: flex; gap: 6px; align-items: end; height: 90px; margin-top: 8px; }
+      .barx { width: 22px; background: #1e3a8a; border: 1px solid #334155; border-radius: 4px 4px 0 0; position: relative; }
+      .barx .val { position: absolute; top: -20px; width: 100%; text-align: center; font-size: 0.75rem; color: var(--muted); }
+
+      .history { margin-top: 14px; }
+      .hist-item { border-top: 1px dashed #284266; padding: 8px 0; color: var(--muted); }
+      .pill-mini { padding: 2px 8px; border: 1px solid #284266; border-radius: 999px; font-size: 0.75rem; color: #cfe8ff; }
+
+      footer { color: var(--muted); padding: 20px; text-align: center; }
+      a { color: var(--link); }
+      code { background: #0b1228; border: 1px solid #1f2a44; border-radius: 6px; padding: 1px 6px; }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="wrap">
+        <h1>MCS4204 Interactive MCQ Practice</h1>
+        <div class="subtitle">Lectures 1–3 • Unlimited variants • Score, timing, analytics, and history</div>
+
+        <div class="controls">
+          <div class="row select" id="topicSelect">
+            <label class="pill"><input type="checkbox" value="L1" checked /> Lecture 1: Intro & Fundamentals</label>
+            <label class="pill"><input type="checkbox" value="L2" checked /> Lecture 2: Processes & Knowledge Areas</label>
+            <label class="pill"><input type="checkbox" value="L3" checked /> Lecture 3: Planning (Scope/Schedule/Cost/Quality)</label>
+          </div>
+          <div class="row">
+            <div class="pill num">Questions <input id="questionCount" type="number" min="5" max="200" step="1" value="25" /></div>
+            <label class="pill"><input id="immediate" type="checkbox" checked /> Immediate feedback</label>
+            <label class="pill"><input id="shuffleAnswers" type="checkbox" checked /> Shuffle answers</label>
+            <label class="pill"><input id="includeDynamic" type="checkbox" checked /> Include dynamic generators</label>
+            <label class="pill"><input id="timerEnabled" type="checkbox" /> Timer</label>
+          </div>
+          <div class="row actions">
+            <button id="startBtn">Start Quiz</button>
+            <button id="resetBtn" class="secondary">Reset</button>
+            <button id="exportBtn" class="secondary">Export History (CSV)</button>
+            <span class="hint">Tip: Choose topics, set question count, then Start. Everything runs locally in your browser.</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="wrap">
+      <div class="grid">
+        <section class="panel" id="quizPanel">
+          <div id="statusLine" class="hint">Not started.</div>
+          <div class="progress" aria-label="progress"><div id="progressBar" class="bar"></div></div>
+          <div id="questionContainer"></div>
+          <div class="nav">
+            <div>
+              <button id="prevBtn" class="secondary" disabled>Prev</button>
+              <button id="nextBtn" class="secondary" disabled>Next</button>
+            </div>
+            <div>
+              <button id="finishBtn" class="warn" disabled>Finish</button>
+            </div>
+          </div>
+        </section>
+
+        <aside class="panel">
+          <h3 style="margin-top:0">Live Stats</h3>
+          <div class="stats">
+            <div class="stat"><span>Answered</span><span id="statAnswered">0</span></div>
+            <div class="stat"><span>Correct</span><span id="statCorrect">0</span></div>
+            <div class="stat"><span>Accuracy</span><span id="statAcc">0%</span></div>
+            <div class="stat"><span>Avg Time/Q</span><span id="statAvg">0.0s</span></div>
+          </div>
+          <div class="chart" id="topicChart" aria-label="topic breakdown"></div>
+
+          <div class="history">
+            <h3>History</h3>
+            <div id="historyList"></div>
+          </div>
+        </aside>
+      </div>
+
+      <section class="panel" id="summaryPanel" style="display:none; margin-top:16px;">
+        <h2 style="margin-top:0">Summary</h2>
+        <div id="summaryText"></div>
+        <div class="row" style="margin-top:8px; gap:8px;">
+          <button id="reviewWrongBtn" class="secondary">Review Incorrect</button>
+          <button id="restartBtn">New Quiz</button>
+        </div>
+        <div id="reviewContainer" style="margin-top:12px;"></div>
+      </section>
+    </main>
+
+    <footer>
+      All data stays in your browser. Print or save results using your browser’s print dialog if needed.
+    </footer>
+
+    <script>
+      // ===== Utilities =====
+      const randInt = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
+      const choice = arr => arr[Math.floor(Math.random() * arr.length)];
+      const shuffle = arr => arr.sort(() => Math.random() - 0.5);
+      const clamp = (n, a, b) => Math.max(a, Math.min(b, n));
+
+      // ===== Question Model =====
+      // { id, topic: 'L1'|'L2'|'L3', stem, options: [..], answerIndex, explanation, tags: ['scope','evm','quality'] }
+
+      // Core static bank (concise but broad). Additions welcome.
+      const staticBank = [
+        // Lecture 1 — Intro & Fundamentals
+        { id: 'L1-1', topic: 'L1', stem: 'What is a project in project management terms?', options: [
+          'A temporary endeavor undertaken to create a unique product, service, or result',
+          'A set of routine operations for ongoing business work',
+          'Any task lasting more than six months',
+          'A portfolio of unrelated initiatives'
+        ], answerIndex: 0, explanation: 'Projects are temporary and unique; operations are ongoing and repetitive.', tags: ['intro','definition'] },
+        { id: 'L1-2', topic: 'L1', stem: 'Which document authorizes the project and the project manager?', options: [
+          'Project charter', 'Project plan', 'Business case', 'Statement of work (SOW)'
+        ], answerIndex: 0, explanation: 'The charter formally authorizes the project and gives the PM authority to apply resources.', tags: ['charter'] },
+        { id: 'L1-3', topic: 'L1', stem: 'Which is NOT a typical constraint in the triple constraint?', options: [
+          'Scope', 'Schedule', 'Cost', 'Procurement'
+        ], answerIndex: 3, explanation: 'Scope, schedule, and cost are the classic triple constraints; quality is often central as well.', tags: ['constraints'] },
+        { id: 'L1-4', topic: 'L1', stem: 'In predictive (waterfall) life cycles, when is scope defined?', options: [
+          'Early in the project and remains stable', 'Near the end of each iteration', 'Only after risk analysis', 'Continuously based on customer feedback'
+        ], answerIndex: 0, explanation: 'Predictive approaches define scope early and manage changes via formal control.', tags: ['lifecycle'] },
+        { id: 'L1-5', topic: 'L1', stem: 'In agile/adaptive life cycles, what is most valued?', options: [
+          'Comprehensive documentation', 'Strict change control', 'Customer collaboration and responding to change', 'Big design up front'
+        ], answerIndex: 2, explanation: 'Agile values collaboration and adaptability over heavy upfront planning.', tags: ['agile'] },
+        { id: 'L1-6', topic: 'L1', stem: 'Who are stakeholders?', options: [
+          'Only the project team', 'Persons or organizations that may affect or be affected by the project', 'Only the sponsor', 'Only customers'
+        ], answerIndex: 1, explanation: 'Stakeholders have an interest in or are impacted by the project outcomes.', tags: ['stakeholders'] },
+        { id: 'L1-7', topic: 'L1', stem: 'Which statement about a PMO is true?', options: [
+          'It always controls projects directly', 'It may be supportive, controlling, or directive', 'It only exists in agile organizations', 'It replaces the role of the sponsor'
+        ], answerIndex: 1, explanation: 'PMOs vary from providing templates to fully directing projects.', tags: ['pmo'] },
+        { id: 'L1-8', topic: 'L1', stem: 'Organizational structure with strongest PM authority is:', options: [
+          'Functional', 'Weak matrix', 'Balanced matrix', 'Projectized'
+        ], answerIndex: 3, explanation: 'Projectized gives PM full authority; functional gives functional managers the authority.', tags: ['org-structure'] },
+        { id: 'L1-9', topic: 'L1', stem: 'The business case primarily does what?', options: [
+          'Defines WBS', 'Justifies the project with cost-benefit analysis', 'Assigns the team', 'Controls scope changes'
+        ], answerIndex: 1, explanation: 'Business case explains the value and feasibility driving authorization.', tags: ['business-case'] },
+        { id: 'L1-10', topic: 'L1', stem: 'Progressive elaboration means:', options: [
+          'Reducing scope to meet budget', 'Incrementally detailing plans as more information becomes available', 'Adding features without approval', 'Eliminating documentation'
+        ], answerIndex: 1, explanation: 'Plans evolve as information increases; not scope creep.', tags: ['planning'] },
+
+        // Lecture 2 — Processes & Knowledge Areas
+        { id: 'L2-1', topic: 'L2', stem: 'How many PMBOK process groups are there?', options: [
+          '3', '4', '5', '6'
+        ], answerIndex: 2, explanation: 'Initiating, Planning, Executing, Monitoring & Controlling, Closing.', tags: ['process-groups'] },
+        { id: 'L2-2', topic: 'L2', stem: 'Scope baseline includes:', options: [
+          'Scope statement, WBS, WBS dictionary', 'Scope statement only', 'Requirements traceability matrix only', 'WBS only'
+        ], answerIndex: 0, explanation: 'The scope baseline is the approved version including these elements.', tags: ['scope'] },
+        { id: 'L2-3', topic: 'L2', stem: 'What does the schedule baseline represent?', options: [
+          'Approved version of the schedule model', 'Average team velocity', 'Risk-adjusted plan only', 'Stakeholder timetable'
+        ], answerIndex: 0, explanation: 'It is the approved schedule used to measure performance.', tags: ['schedule'] },
+        { id: 'L2-4', topic: 'L2', stem: 'Which is NOT a tool of Collect Requirements?', options: [
+          'Interviews', 'Delphi technique', 'Control charts', 'Facilitated workshops'
+        ], answerIndex: 2, explanation: 'Control charts are quality control tools.', tags: ['requirements'] },
+        { id: 'L2-5', topic: 'L2', stem: 'RACI stands for:', options: [
+          'Responsible, Accountable, Consulted, Informed', 'Report, Analyze, Control, Improve', 'Readiness, Acceptance, Cost, Impact', 'Risk, Assumption, Constraint, Issue'
+        ], answerIndex: 0, explanation: 'A responsibility assignment matrix type.', tags: ['resources'] },
+        { id: 'L2-6', topic: 'L2', stem: 'Which plan defines how changes are managed?', options: [
+          'Scope management plan', 'Change management plan', 'Issue log', 'Communications plan'
+        ], answerIndex: 1, explanation: 'Change management plan is a component of the project management plan.', tags: ['change'] },
+        { id: 'L2-7', topic: 'L2', stem: 'Earned Value (EV) is best defined as:', options: [
+          'Budget at completion', 'Value of work performed expressed in the approved budget', 'Actual cost to date', 'Cost variance at completion'
+        ], answerIndex: 1, explanation: 'EV measures the value of work completed against the budget.', tags: ['evm'] },
+        { id: 'L2-8', topic: 'L2', stem: 'Which is a qualitative risk analysis tool?', options: [
+          'Monte Carlo simulation', 'Probability and impact matrix', 'Sensitivity analysis', 'Decision tree with EMV'
+        ], answerIndex: 1, explanation: 'Qualitative uses matrices; Monte Carlo/sensitivity are quantitative.', tags: ['risk'] },
+        { id: 'L2-9', topic: 'L2', stem: 'What is the purpose of a lessons learned register?', options: [
+          'List of requirements changes', 'Record knowledge gained during the project', 'Track defects', 'Plan procurements'
+        ], answerIndex: 1, explanation: 'It documents experiences to improve future performance.', tags: ['knowledge'] },
+        { id: 'L2-10', topic: 'L2', stem: 'Control quality is performed during:', options: [
+          'Initiating', 'Planning', 'Executing/Monitoring and Controlling', 'Closing'
+        ], answerIndex: 2, explanation: 'It inspects deliverables to verify they meet quality requirements.', tags: ['quality'] },
+
+        // Lecture 3 — Planning specifics
+        { id: 'L3-1', topic: 'L3', stem: 'Which tool sequences activities by identifying dependencies?', options: [
+          'WBS', 'Precedence Diagramming Method (PDM)', 'Resource histogram', 'Pareto chart'
+        ], answerIndex: 1, explanation: 'PDM builds a network diagram based on relationships.', tags: ['schedule','pdm'] },
+        { id: 'L3-2', topic: 'L3', stem: 'Three-point estimate (PERT expected) formula is:', options: [
+          '(O + P + M) / 3', '(O + 4M + P) / 6', '(4O + M + P) / 6', '(O + 4P + M) / 6'
+        ], answerIndex: 1, explanation: 'Beta distribution weighting with 4× most likely.', tags: ['estimating','pert'] },
+        { id: 'L3-3', topic: 'L3', stem: 'Communications channels formula for n stakeholders is:', options: [
+          'n^2', 'n(n−1)', 'n(n−1)/2', '(n+1)!'
+        ], answerIndex: 2, explanation: 'Unique pairwise channels equals n(n−1)/2.', tags: ['communications'] },
+        { id: 'L3-4', topic: 'L3', stem: 'Cost baseline includes:', options: [
+          'Management reserves', 'Contingency reserves only', 'Time-phased budget excluding management reserves', 'BAC plus profit'
+        ], answerIndex: 2, explanation: 'Management reserves are not part of the cost baseline.', tags: ['cost'] },
+        { id: 'L3-5', topic: 'L3', stem: 'A schedule network path with zero total float is:', options: [
+          'On the critical path', 'Non-critical', 'Fast-tracked', 'Crashing required'
+        ], answerIndex: 0, explanation: 'Zero float indicates critical path.', tags: ['schedule','critical-path'] },
+        { id: 'L3-6', topic: 'L3', stem: 'Which is a cost of quality (COQ) prevention activity?', options: [
+          'Rework', 'Inspection', 'Training', 'Warranty claims'
+        ], answerIndex: 2, explanation: 'Training prevents defects; rework/warranty are failure costs; inspection is appraisal.', tags: ['quality','coq'] },
+        { id: 'L3-7', topic: 'L3', stem: 'Fast tracking means:', options: [
+          'Adding resources to activities', 'Doing activities in parallel that were originally in sequence', 'Reducing scope', 'Using overtime'
+        ], answerIndex: 1, explanation: 'Fast tracking overlaps activities; crashing adds resources.', tags: ['schedule-compression'] },
+        { id: 'L3-8', topic: 'L3', stem: 'Which dependency type is most common?', options: [
+          'Finish-to-Start (FS)', 'Start-to-Start (SS)', 'Finish-to-Finish (FF)', 'Start-to-Finish (SF)'
+        ], answerIndex: 0, explanation: 'FS is most widely used.', tags: ['dependencies'] },
+        { id: 'L3-9', topic: 'L3', stem: 'If CPI = 0.8, your project is:', options: [
+          'Under budget', 'Over budget', 'On budget', 'Cannot say'
+        ], answerIndex: 1, explanation: 'CPI < 1 means cost efficiency is poor; over budget.', tags: ['evm'] },
+        { id: 'L3-10', topic: 'L3', stem: 'If SPI = 1.1, your project is:', options: [
+          'Ahead of schedule', 'Behind schedule', 'On schedule', 'Over budget'
+        ], answerIndex: 0, explanation: 'SPI > 1 means ahead of schedule.', tags: ['evm'] },
+      ];
+
+      // ===== Dynamic Generators (unlimited variants) =====
+      function genEVM() {
+        // Randomly compute CPI or SPI
+        const PV = randInt(80, 400) * 1000;
+        const EV = randInt(60, 420) * 1000;
+        const AC = randInt(60, 420) * 1000;
+        const kind = Math.random() < 0.5 ? 'CPI' : 'SPI';
+        const val = kind === 'CPI' ? (EV / AC) : (EV / PV);
+        const correct = Number(val.toFixed(2));
+        // plausible distractors
+        const opts = new Set([correct.toFixed(2)]);
+        while (opts.size < 4) {
+          const noise = (Math.random() * 0.6 - 0.3); // -0.3..0.3
+          const v = clamp(val + noise, 0.2, 2.5);
+          opts.add(v.toFixed(2));
+        }
+        const options = shuffle(Array.from(opts)).map(s => s);
+        const answerIndex = options.indexOf(correct.toFixed(2));
+        const stem = `Given PV = $${PV.toLocaleString()}, EV = $${EV.toLocaleString()}, AC = $${AC.toLocaleString()}, what is ${kind}?`;
+        const explanation = `${kind} = EV / ${kind === 'CPI' ? 'AC' : 'PV'} = ${correct}`;
+        return { topic: 'L3', stem, options, answerIndex, explanation, tags: ['evm','cost','schedule'] };
+      }
+
+      function genNPV() {
+        const years = randInt(3, 5);
+        const rate = randInt(5, 18) / 100; // 5%..18%
+        const flows = Array.from({ length: years }, () => randInt(-50, 180) * 1000);
+        // Ensure initial investment negative in year 0 separately for realism
+        const initial = -randInt(50, 200) * 1000;
+        const cash = [initial, ...flows];
+        const npv = cash.reduce((acc, cf, i) => acc + (cf / Math.pow(1 + rate, i)), 0);
+        const stem = `Cash flows (year 0..${years}): ${cash.map(v => '$' + v.toLocaleString()).join(', ')} at discount rate ${(rate*100).toFixed(1)}%. What is the sign of NPV?`;
+        const correct = npv > 1 ? 'Positive' : (npv < -1 ? 'Negative' : 'Approximately zero');
+        const options = shuffle(['Positive', 'Negative', 'Approximately zero', 'Cannot be determined']);
+        const answerIndex = options.indexOf(correct);
+        const explanation = `NPV = Σ CF_t / (1+r)^t = ${npv.toFixed(0)} (${correct}).`;
+        return { topic: 'L3', stem, options, answerIndex, explanation, tags: ['cost','npv'] };
+      }
+
+      function genPERT() {
+        const O = randInt(1, 8);
+        const M = randInt(O, O + 10);
+        const P = randInt(M + 1, M + 12);
+        const expected = (O + 4*M + P) / 6;
+        const variance = Math.pow((P - O) / 6, 2);
+        const stem = `For an activity with O=${O}, M=${M}, P=${P} days, what is the PERT expected duration?`;
+        const correct = expected.toFixed(1) + ' days';
+        const opts = new Set([correct]);
+        while (opts.size < 4) {
+          const jitter = (Math.random() * 2 - 1) * 2; // +/-2
+          const alt = clamp(expected + jitter, 0.5, 50);
+          opts.add(alt.toFixed(1) + ' days');
+        }
+        const options = shuffle(Array.from(opts));
+        const answerIndex = options.indexOf(correct);
+        const explanation = `E = (O + 4M + P)/6 = ${expected.toFixed(1)} days; Var = ((P-O)/6)^2 = ${variance.toFixed(2)}`;
+        return { topic: 'L3', stem, options, answerIndex, explanation, tags: ['estimating','pert'] };
+      }
+
+      function genCommChannels() {
+        const n = randInt(4, 20);
+        const channels = (n * (n - 1)) / 2;
+        const stem = `You have ${n} stakeholders. How many two-way communication channels exist?`;
+        const correct = channels.toString();
+        const options = shuffle([
+          channels.toString(),
+          (n*n).toString(),
+          (n*(n-1)).toString(),
+          (n-1).toString()
+        ]);
+        const answerIndex = options.indexOf(correct);
+        const explanation = `Channels = n(n-1)/2 = ${channels}.`;
+        return { topic: 'L3', stem, options, answerIndex, explanation, tags: ['communications'] };
+      }
+
+      function genRiskPI() {
+        const probs = ['Very Low','Low','Moderate','High','Very High'];
+        const imps = ['Minor','Moderate','Major','Severe','Critical'];
+        const pIdx = randInt(0,4); const iIdx = randInt(0,4);
+        const score = (pIdx+1) * (iIdx+1);
+        const stem = `A risk has probability '${probs[pIdx]}' and impact '${imps[iIdx]}'. What is its PI score (1–25)?`;
+        const correct = score;
+        const opts = new Set([correct]);
+        while (opts.size < 4) opts.add(randInt(1,25));
+        const options = shuffle(Array.from(opts)).map(n => n.toString());
+        const answerIndex = options.indexOf(correct.toString());
+        const explanation = `PI score = (prob index 1–5) × (impact index 1–5) = ${score}.`;
+        return { topic: 'L2', stem, options, answerIndex, explanation, tags: ['risk','qualitative'] };
+      }
+
+      function genQualityCost() {
+        const contexts = ['In software projects', 'In manufacturing', 'For a construction project', 'In a service organization', 'For an R&D initiative'];
+        const ctx = choice(contexts);
+        const items = [
+          { stem: `${ctx}, which is a prevention cost (Cost of Quality)?`, correct: 'Training and process improvement', distractors: ['Inspection and testing', 'Scrap and rework', 'Warranty claims and returns'] },
+          { stem: `${ctx}, which is an appraisal cost (Cost of Quality)?`, correct: 'Inspection and testing', distractors: ['Training and process improvement', 'Warranty claims and returns', 'Customer compensation'] },
+          { stem: `${ctx}, which is an external failure cost?`, correct: 'Warranty claims and returns', distractors: ['Training', 'Peer reviews', 'Calibration of test equipment'] },
+          { stem: `${ctx}, which is an internal failure cost?`, correct: 'Scrap and rework', distractors: ['Training and process improvement', 'Supplier audits', 'Customer refunds'] },
+        ];
+        const pick = choice(items);
+        const options = shuffle([pick.correct, ...pick.distractors]);
+        return { topic: 'L3', stem: pick.stem, options, answerIndex: options.indexOf(pick.correct), explanation: 'COQ groups: Prevention, Appraisal, Internal Failure, External Failure.', tags: ['quality','coq'] };
+      }
+
+      const generators = [genEVM, genPERT, genCommChannels, genRiskPI, genNPV, genQualityCost];
+
+      // ===== State =====
+  let quiz = { questions: [], index: 0, answers: [], locked: [], startTime: 0, perQuestionTimes: [], topicStats: {}, settings: {}, finished: false };
+      const HISTORY_KEY = 'mcs4204_quiz_history_v1';
+
+      // ===== UI Helpers =====
+      const el = sel => document.querySelector(sel);
+      const els = sel => Array.from(document.querySelectorAll(sel));
+
+      function renderTopicChart(stats) {
+        const container = el('#topicChart');
+        container.innerHTML = '';
+        const topics = ['L1','L2','L3'];
+        const labels = { L1: 'L1', L2: 'L2', L3: 'L3' };
+        for (const t of topics) {
+          const s = stats[t] || { correct: 0, total: 0 };
+          const acc = s.total ? Math.round((s.correct / s.total) * 100) : 0;
+          const bar = document.createElement('div');
+          bar.className = 'barx';
+          bar.style.height = clamp(acc, 0, 100) + 'px';
+          bar.title = `${labels[t]}: ${acc}% (${s.correct}/${s.total})`;
+          const v = document.createElement('div'); v.className = 'val'; v.textContent = labels[t];
+          bar.appendChild(v);
+          container.appendChild(bar);
+        }
+      }
+
+      function updateLiveStats() {
+        const answered = quiz.answers.filter(a => a != null).length;
+        const correct = quiz.answers.reduce((acc, a, i) => acc + (a === quiz.questions[i].answerIndex ? 1 : 0), 0);
+        const acc = answered ? Math.round((correct / answered) * 100) : 0;
+        const totalTime = quiz.perQuestionTimes.reduce((a,b) => a + b, 0);
+        const avg = answered ? (totalTime / answered) / 1000 : 0;
+        el('#statAnswered').textContent = `${answered}/${quiz.questions.length}`;
+        el('#statCorrect').textContent = `${correct}`;
+        el('#statAcc').textContent = `${acc}%`;
+        el('#statAvg').textContent = `${avg.toFixed(1)}s`;
+        // topic stats
+        const stats = { L1: { correct:0,total:0 }, L2:{correct:0,total:0}, L3:{correct:0,total:0} };
+        quiz.questions.forEach((q, i) => {
+          if (!q.topic) return;
+          stats[q.topic].total++;
+          if (quiz.answers[i] === q.answerIndex) stats[q.topic].correct++;
+        });
+        quiz.topicStats = stats;
+        renderTopicChart(stats);
+      }
+
+      function updateProgress() {
+        const pct = ((quiz.index) / quiz.questions.length) * 100;
+        el('#progressBar').style.width = `${pct}%`;
+      }
+
+      function renderQuestion() {
+        const container = el('#questionContainer');
+        container.innerHTML = '';
+        const i = quiz.index;
+        const q = quiz.questions[i];
+        if (!q) return;
+        const card = document.createElement('div'); card.className = 'question-card';
+        const head = document.createElement('div'); head.className = 'qhead';
+        head.innerHTML = `<div class="qtitle">Q${i+1}. ${q.stem}</div><div class="topic">${q.topic || ''} <span class="tags">${q.tags? q.tags.join(', ') : ''}</span></div>`;
+        card.appendChild(head);
+
+        const options = document.createElement('div'); options.className = 'options';
+        q.options.forEach((optText, idx) => {
+          const opt = document.createElement('label'); opt.className = 'opt';
+          const inp = document.createElement('input'); inp.type = 'radio'; inp.name = 'opt'; inp.value = idx;
+          if (quiz.answers[i] === idx) inp.checked = true;
+          opt.appendChild(inp);
+          const span = document.createElement('div'); span.textContent = optText; opt.appendChild(span);
+          options.appendChild(opt);
+        });
+        card.appendChild(options);
+
+        const feedback = document.createElement('div'); feedback.className = 'feedback';
+        const explain = document.createElement('div'); explain.className = 'explain';
+        card.appendChild(feedback); card.appendChild(explain);
+        container.appendChild(card);
+
+        const immediate = quiz.settings.immediate;
+        const isLocked = !!(quiz.locked[i] || quiz.finished);
+        // Disable inputs if locked
+        if (isLocked) {
+          options.querySelectorAll('input').forEach(inp => inp.disabled = true);
+        }
+        options.addEventListener('change', (e) => {
+          if (e.target && e.target.name === 'opt') {
+            if (quiz.locked[i] || quiz.finished) return; // prevent changes when locked
+            const chosen = Number(e.target.value);
+            selectAnswer(i, chosen, { feedback, options, explain, q });
+          }
+        });
+
+        // Timer per question start
+        quiz._qStart = performance.now();
+
+        // If already answered, show feedback state
+        if (quiz.answers[i] != null && (immediate || quiz.finished)) {
+          revealFeedback({ feedback, options, explain, q }, quiz.answers[i]);
+        }
+        updateProgress();
+        updateButtons();
+      }
+
+      function revealFeedback(ui, chosen) {
+        const { feedback, options, explain, q } = ui;
+        const correct = q.answerIndex;
+        // style
+        Array.from(options.children).forEach((label, idx) => {
+          label.classList.remove('correct','wrong');
+          if (idx === correct) label.classList.add('correct');
+          if (idx === chosen && chosen !== correct) label.classList.add('wrong');
+        });
+        const isRight = chosen === correct;
+        feedback.innerHTML = isRight ? `<span class="good">Correct</span>` : `<span class="bad">Incorrect</span>`;
+        explain.textContent = q.explanation || '';
+      }
+
+      function selectAnswer(i, chosen, ui) {
+        const now = performance.now();
+        const elapsed = now - (quiz._qStart || now);
+        quiz.answers[i] = chosen;
+        quiz.perQuestionTimes[i] = (quiz.perQuestionTimes[i] || 0) + elapsed;
+        if (quiz.settings.immediate) {
+          revealFeedback(ui, chosen);
+          quiz.locked[i] = true;
+          // Disable inputs for this question to prevent changes
+          ui.options.querySelectorAll('input').forEach(inp => inp.disabled = true);
+        }
+        updateLiveStats();
+        el('#finishBtn').disabled = quiz.answers.filter(a => a != null).length < Math.ceil(quiz.questions.length * 0.6);
+      }
+
+      function updateButtons() {
+        el('#prevBtn').disabled = quiz.index <= 0;
+        el('#nextBtn').disabled = quiz.index >= quiz.questions.length - 1;
+      }
+
+      function nextQ() { if (quiz.index < quiz.questions.length - 1) { quiz.index++; renderQuestion(); } }
+      function prevQ() { if (quiz.index > 0) { quiz.index--; renderQuestion(); } }
+
+      function buildPool(settings) {
+        // Enforce uniqueness by stem (and topic) within a single quiz.
+        const topics = settings.topics;
+        const seen = new Set();
+        const keyFor = (q) => (q.id ? `ID:${q.id}` : `${q.topic}|${q.stem}`);
+        const result = [];
+
+        // Helper to add a question if unique (with optional answer shuffling)
+        const tryAdd = (q) => {
+          const key = keyFor(q);
+          if (seen.has(key)) return false;
+          // deep copy minimal
+          const qq = { ...q, options: q.options.slice() };
+          if (settings.shuffleAnswers) {
+            const zipped = qq.options.map((t, idx) => ({ t, idx }));
+            shuffle(zipped);
+            qq.options = zipped.map(o => o.t);
+            qq.answerIndex = zipped.findIndex(o => o.idx === qq.answerIndex);
+          }
+          result.push(qq);
+          seen.add(key);
+          return true;
+        };
+
+        // 1) Add static (unique only) first
+        const staticPool = staticBank.filter(q => topics.includes(q.topic));
+        shuffle(staticPool);
+        for (const q of staticPool) {
+          if (result.length >= settings.count) break;
+          tryAdd(q);
+        }
+
+        // 2) Add dynamic until reaching requested count or attempt cap
+        if (settings.includeDynamic && result.length < settings.count) {
+          let attempts = 0;
+          const attemptLimit = settings.count * 40; // generous cap to avoid infinite loops
+          while (result.length < settings.count && attempts < attemptLimit) {
+            attempts++;
+            const g = choice(generators);
+            const q = g();
+            // Assign ephemeral id to aid uniqueness tracking across re-renders, but use stem/topic for seen
+            q.id = `G-${Math.random().toString(36).slice(2,10)}`;
+            tryAdd(q);
+          }
+        }
+
+        return result;
+      }
+
+      function startQuiz() {
+        const selectedTopics = els('#topicSelect input[type="checkbox"]').filter(c => c.checked).map(c => c.value);
+        const settings = {
+          topics: selectedTopics.length ? selectedTopics : ['L1','L2','L3'],
+          count: clamp(parseInt(el('#questionCount').value || '25', 10), 5, 200),
+          immediate: el('#immediate').checked,
+          shuffleAnswers: el('#shuffleAnswers').checked,
+          includeDynamic: el('#includeDynamic').checked,
+          timer: el('#timerEnabled').checked,
+        };
+        quiz = {
+          questions: buildPool(settings),
+          index: 0,
+          answers: [],
+          locked: [],
+          startTime: performance.now(),
+          perQuestionTimes: [],
+          topicStats: {},
+          settings,
+          finished: false,
+        };
+        el('#statusLine').textContent = `Quiz started • ${quiz.questions.length} questions`;
+        el('#finishBtn').disabled = true;
+        el('#nextBtn').disabled = false;
+        renderQuestion();
+        updateLiveStats();
+      }
+
+      function finishQuiz() {
+        if (quiz.finished) return;
+        quiz.finished = true;
+        const totalTime = (performance.now() - quiz.startTime) / 1000;
+        const answered = quiz.answers.filter(a => a != null).length;
+        const correct = quiz.answers.reduce((acc, a, i) => acc + (a === quiz.questions[i].answerIndex ? 1 : 0), 0);
+        const acc = quiz.questions.length ? Math.round((correct / quiz.questions.length) * 100) : 0;
+        el('#statusLine').textContent = `Finished • ${correct}/${quiz.questions.length} correct • Accuracy ${acc}% • Time ${totalTime.toFixed(1)}s`;
+        // Lock all questions after finishing
+        quiz.locked = quiz.questions.map(() => true);
+        // Re-render current question to disable inputs and show feedback even if not immediate
+        renderQuestion();
+        updateLiveStats();
+        showSummary();
+        saveHistory({ when: new Date().toISOString(), total: quiz.questions.length, correct, timeSec: totalTime, topics: quiz.settings.topics });
+        loadHistory();
+      }
+
+      function showSummary() {
+        const s = el('#summaryPanel');
+        const correct = quiz.answers.reduce((acc, a, i) => acc + (a === quiz.questions[i].answerIndex ? 1 : 0), 0);
+        const total = quiz.questions.length;
+        const time = ((performance.now() - quiz.startTime) / 1000).toFixed(1);
+        const perTopic = quiz.topicStats;
+        el('#summaryText').innerHTML = `
+          <div><strong>Score:</strong> ${correct}/${total} (${Math.round(correct/total*100)}%) • <strong>Time:</strong> ${time}s</div>
+          <div style="margin-top:6px"><strong>By Topic:</strong> L1 ${perTopic.L1?.correct||0}/${perTopic.L1?.total||0}, L2 ${perTopic.L2?.correct||0}/${perTopic.L2?.total||0}, L3 ${perTopic.L3?.correct||0}/${perTopic.L3?.total||0}</div>
+        `;
+        s.style.display = '';
+        // Build review list of incorrect
+        const wrong = [];
+        quiz.questions.forEach((q, i) => {
+          if (quiz.answers[i] !== q.answerIndex) wrong.push({ q, chosen: quiz.answers[i] });
+        });
+        const rc = el('#reviewContainer');
+        rc.innerHTML = '';
+        if (!wrong.length) {
+          rc.innerHTML = '<div class="hint">No incorrect answers — great job!</div>';
+        } else {
+          wrong.forEach(({ q, chosen }, idx) => {
+            const div = document.createElement('div'); div.className = 'question-card';
+            div.innerHTML = `
+              <div class="qhead"><div class="qtitle">${idx+1}. ${q.stem}</div><div class="topic">${q.topic}</div></div>
+              <div class="options">${q.options.map((t, j) => `<div class="opt ${j===q.answerIndex?'correct':''} ${j===chosen && j!==q.answerIndex?'wrong':''}"><div>${t}</div></div>`).join('')}</div>
+              <div class="explain">${q.explanation||''}</div>
+            `;
+            rc.appendChild(div);
+          });
+        }
+      }
+
+      function saveHistory(entry) {
+        try {
+          const hist = JSON.parse(localStorage.getItem(HISTORY_KEY) || '[]');
+          hist.unshift(entry);
+          localStorage.setItem(HISTORY_KEY, JSON.stringify(hist.slice(0, 100)));
+        } catch {}
+      }
+
+      function loadHistory() {
+        const list = el('#historyList'); list.innerHTML = '';
+        try {
+          const hist = JSON.parse(localStorage.getItem(HISTORY_KEY) || '[]');
+          hist.slice(0, 10).forEach(h => {
+            const d = document.createElement('div'); d.className = 'hist-item';
+            const when = new Date(h.when).toLocaleString();
+            d.innerHTML = `
+              <div>${when} — <span class="pill-mini">${h.correct}/${h.total}</span> • ${(h.correct/h.total*100).toFixed(0)}% • ${h.timeSec.toFixed(1)}s</div>
+              <div class="hint">Topics: ${h.topics.join(', ')}</div>
+            `;
+            list.appendChild(d);
+          });
+        } catch {}
+      }
+
+      function exportHistoryCSV() {
+        try {
+          const hist = JSON.parse(localStorage.getItem(HISTORY_KEY) || '[]');
+          const rows = [
+            ['when','total','correct','accuracy','timeSec','topics']
+          ];
+          hist.forEach(h => rows.push([
+            h.when,
+            h.total,
+            h.correct,
+            ((h.correct/h.total)*100).toFixed(0) + '%',
+            h.timeSec.toFixed(1),
+            '"' + (h.topics || []).join(' ') + '"'
+          ]));
+          const csv = rows.map(r => r.join(',')).join('\n');
+          const blob = new Blob([csv], { type: 'text/csv' });
+          const url = URL.createObjectURL(blob);
+          const a = document.createElement('a');
+          a.href = url; a.download = 'mcs4204_quiz_history.csv'; a.click();
+          URL.revokeObjectURL(url);
+        } catch {}
+      }
+
+      function resetQuiz() {
+        quiz = { questions: [], index: 0, answers: [], startTime: 0, perQuestionTimes: [], topicStats: {}, settings: {}, finished: false };
+        el('#questionContainer').innerHTML = '';
+        el('#statusLine').textContent = 'Not started.';
+        el('#progressBar').style.width = '0%';
+        el('#summaryPanel').style.display = 'none';
+        updateButtons();
+        updateLiveStats();
+      }
+
+      // ===== Wire events =====
+      document.addEventListener('DOMContentLoaded', () => {
+        loadHistory();
+        el('#startBtn').addEventListener('click', startQuiz);
+        el('#finishBtn').addEventListener('click', finishQuiz);
+        el('#nextBtn').addEventListener('click', nextQ);
+        el('#prevBtn').addEventListener('click', prevQ);
+        el('#resetBtn').addEventListener('click', resetQuiz);
+        el('#exportBtn').addEventListener('click', exportHistoryCSV);
+        el('#reviewWrongBtn').addEventListener('click', () => {
+          el('#reviewContainer').scrollIntoView({ behavior: 'smooth', block: 'start' });
+        });
+        el('#restartBtn').addEventListener('click', () => { resetQuiz(); window.scrollTo({ top: 0, behavior: 'smooth' }); });
+      });
+    </script>
+  </body>
+</html>

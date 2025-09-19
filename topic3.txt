@@ -1,0 +1,322 @@
+9/14/2025
+
+MASTER OF COMPUTER SCIENCE/
+MASTER OF SCIENCE IN COMPUTER SCIENCE
+
+MCS 4204 –
+Software Project Management and Quality
+Assurance
+
+Project Scope Management
+Dr. Thushani A. Weerasinghe
+Senior Lecturer, UCSC
+
+UNIVERSITY OF COLOMBO SCHOOL OF COMPUTING
+
+1
+
+What is Scope Management
+• Processes to ensure that the project includes all the
+work required, and only the work required, to
+complete the project successfully.
+• Primarily concerned with defining and controlling what is
+and is not included in the project.
+• Project Scope Management processes are:
+• Plan Scope Management
+• Collect Requirements
+• Define Scope
+• Create WBS
+• Validate Scope
+• Control Scope
+Master of Computer Science/ Master of Science in Computer Science
+
+Planning
+Monitoring and controlling
+14 September
+2025
+
+2
+
+2
+
+1
+
+9/14/2025
+
+1.Plan Scope Management
+
+Organization’s culture, marketplace conditions, Personnel administration & infrastructure
+Policies and procedures, and Historical information and lessons learned repositories
+
+• Process of documenting how the project and product scope
+will be defined, validated, and controlled.
+• Provides guidance and direction on how the scope will be
+managed throughout the project.
+• This is performed once or at predefined points in the project.
+14 September
+2025
+
+Master of Computer Science/ Master of Science in Computer Science
+
+3
+
+3
+
+2. Collect Requirements
+
+(Compare your potential requirements with the industry’s
+best practices.)
+
+Master of Computer Science/ Master of Science in Computer Science
+
+14 September
+2025
+
+4
+
+4
+
+2
+
+9/14/2025
+
+Tool/Techniques: Affinity Diagram
+• An output from a brainstorming session
+• Affinity diagram organizes a large number of ideas into their
+natural relationships.
+• Aid to develop innovative solutions
+
+Master of Computer Science/ Master of Science in Computer Science
+
+14 September
+2025
+
+5
+
+14 September
+2025
+
+6
+
+5
+
+Tool/Techniques: Context Diagram
+
+Master of Computer Science/ Master of Science in Computer Science
+https://en.wikipedia.org/wiki/System_context_diagram
+
+6
+
+3
+
+9/14/2025
+
+Output: Requirement Traceability Matrix
+
+Master of Computer Science/ Master of Science in Computer Science
+
+14 September
+2025
+
+7
+
+14 September
+2025
+
+8
+
+7
+
+3. Define Scope
+
+Master of Computer Science/ Master of Science in Computer Science
+
+8
+
+4
+
+9/14/2025
+
+Stakeholder Register
+
+Master of Computer Science/ Master of Science in Computer Science
+
+14 September
+2025
+
+9
+
+9
+
+4. Create WBS
+
+• The process of subdividing project deliverables and project
+work into smaller, more manageable components.
+• Provides a framework of what has to be delivered.
+• This is performed once or at predefined points in the project
+Master of Computer Science/ Master of Science in Computer Science
+
+14 September
+2025
+
+10
+
+10
+
+5
+
+9/14/2025
+
+Output: Scope Baseline
+• It includes the,
+1. approved Project Statement,
+2. Work Breakdown Structure (WBS), incl. control accounts,
+planning packages, and work packages, and
+3. associated WBS dictionary.
+
+11
+
+Example - WBS
+
+Master of Computer Science/ Master of Science in Computer Science
+
+14 September
+2025
+
+12
+
+12
+
+6
+
+9/14/2025
+
+Creating a WBS
+1. Identifying and analyzing the deliverables and
+related work,
+2. Structuring and organizing the WBS,
+3. Decomposing the upper WBS levels into lowerlevel detailed components,
+4. Developing and assigning identification codes to
+the WBS components, and
+5. Verifying that the degree of decomposition of the
+deliverables is appropriate.
+Master of Computer Science/ Master of Science in Computer Science
+
+14 September
+2025
+
+13
+
+13
+
+Identifying activities
+• Activity-based approach
+• Conduct a brainstorming session or analyse similar
+past projects and prepare a WBS
+
+• Product-based approach
+• Produce a Product Break-down Structure (PBS)
+and a Product Flow Diagram (PFD)
+
+• Hybrid approach
+• Introduce additional levels structuring both
+products and activities
+
+14
+
+7
+
+9/14/2025
+
+Activity-based Work Breakdown Structure
+• Identify the main
+(high-level) tasks
+• Break them into lowerlevel tasks
+• Consider which
+activities need to be
+completed before
+others can start
+
+15
+
+PBS
+• Product is a result of an activity
+Component
+products
+
+Sub-component
+products
+•
+•
+•
+
+Do not identify activities as products
+Use standards
+Products at the bottom should be documented by product
+descriptions
+
+16
+
+8
+
+9/14/2025
+
+PFD
+Oval shape item is
+used by the project,
+but not created by it
+
+Bottom of the
+diagram shows an
+overall product
+17
+
+Level 1: project
+Level 2: Deliverables
+
+Level 3: Components
+
+Level 4: Work-packages
+
+Level 5: Tasks
+
+18
+
+9
+
+9/14/2025
+
+5. Validate Scope
+
+formalizing acceptance of the completed
+project deliverables
+
+Master of Computer Science/ Master of Science in Computer Science
+
+14 September
+2025
+
+19
+
+14 September
+2025
+
+20
+
+19
+
+Control Scope
+
+The process of monitoring
+the status of the project
+and product scope and
+managing changes
+to the scope baseline.
+
+Master of Computer Science/ Master of Science in Computer Science
+
+20
+
+10
+
+
