@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>MCS 4204 - Full Question Bank (Lectures 1–3)</title>
+    <style>
+      body { font-family: 'Times New Roman', serif; margin: 40px; line-height: 1.6; color: #333; }
+      .header { text-align: center; border-bottom: 3px solid #333; padding-bottom: 20px; margin-bottom: 30px; }
+      .header h1 { color: #2c3e50; margin-bottom: 5px; }
+      .header h2 { color: #7f8c8d; font-weight: normal; margin-top: 5px; }
+      .set-header { background-color: #3498db; color: white; padding: 15px; margin: 30px 0 20px 0; border-radius: 5px; font-size: 1.2em; font-weight: bold; }
+      .question { margin: 20px 0; padding: 15px; border-left: 4px solid #3498db; background-color: #f8f9fa; page-break-inside: avoid; }
+      .question-number { font-weight: bold; color: #2c3e50; }
+      .question-text { margin: 10px 0; font-weight: 500; }
+      .options { margin: 10px 0; padding-left: 20px; }
+      .option { margin: 5px 0; }
+      .answer { margin-top: 10px; padding: 8px; background-color: #2ecc71; color: white; border-radius: 3px; font-weight: bold; }
+      .explain { margin-top: 8px; padding: 8px; background-color: #ecf5ff; border-left: 3px solid #3498db; border-radius: 3px; }
+      .answer-key { background-color: #f39c12; color: white; padding: 20px; margin: 30px 0; border-radius: 5px; }
+      .page-break { page-break-before: always; }
+      .meta { color: #666; font-size: 0.95em; }
+      code { background: #f0f4ff; padding: 2px 6px; border-radius: 4px; }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>MCS 4204 Software Project Management and Quality Assurance</h1>
+      <h2>Full Question Bank (Lectures 1–3)</h2>
+      <p class="meta">Generated variants to maximize practice coverage. For sharing/printing as one PDF.</p>
+    </div>
+
+    <div id="content"></div>
+
+    <script>
+      // Config: how many per lecture
+      const COUNT_L1 = 100; // Intro & Fundamentals
+      const COUNT_L2 = 100; // Processes & Knowledge Areas
+      const COUNT_L3 = 120; // Planning (Scope/Schedule/Cost/Quality)
+
+      // Utilities
+      const randInt = (a,b) => Math.floor(Math.random()*(b-a+1))+a;
+      const choice = arr => arr[Math.floor(Math.random()*arr.length)];
+      const shuffle = arr => arr.sort(()=>Math.random()-0.5);
+
+      // Ensure unique stems per run
+      const seenStems = new Set();
+      const uniquePush = (arr, q) => {
+        const key = q.topic+"|"+q.stem;
+        if (seenStems.has(key)) return false;
+        seenStems.add(key);
+        arr.push(q);
+        return true;
+      }
+
+      // L1 Generators (paraphrased conceptual variants)
+      function genL1_ProjectVsOperations() {
+        const phrasings = [
+          'Which best defines a project?',
+          'In PM terms, a project is:',
+          'What is a project according to project management?' 
+        ];
+        const optsA = [
+          'A temporary endeavor to create a unique product, service, or result',
+          'A repeating set of ongoing operations',
+          'Any assignment that lasts over six months',
+          'A random collection of activities'
+        ];
+        const options = shuffle(optsA.slice());
+        const correct = options.indexOf('A temporary endeavor to create a unique product, service, or result');
+        return { topic: 'L1', stem: choice(phrasings), options, answerIndex: correct, explanation: 'Projects are temporary and unique; operations are ongoing and repetitive.' };
+      }
+
+      function genL1_Charter() {
+        const stems = [
+          'Which document formally authorizes the project and the PM?',
+          'What document gives the PM authority to use resources?'
+        ];
+        const correct = 'Project charter';
+        const options = shuffle([correct, 'Project management plan', 'Business case', 'Statement of work (SOW)']);
+        return { topic: 'L1', stem: choice(stems), options, answerIndex: options.indexOf(correct), explanation: 'The charter authorizes the project and grants authority.' };
+      }
+
+      function genL1_TripleConstraint() {
+        const stems = ['Which is NOT part of the classic triple constraint?'];
+        const correct = 'Procurement';
+        const options = shuffle(['Scope','Schedule','Cost',correct]);
+        return { topic: 'L1', stem: choice(stems), options, answerIndex: options.indexOf(correct), explanation: 'Scope, schedule, cost are the classic constraints; quality is central.' };
+      }
+
+      function genL1_LifecyclePredictive() {
+        const stems = ['In predictive life cycles, scope is typically:', 'Waterfall approaches define scope:'];
+        const correct = 'Defined early and managed through formal change control';
+        const options = shuffle([correct, 'Continuously evolving each sprint', 'Only after risk analysis', 'Unknown until closing phase']);
+        return { topic: 'L1', stem: choice(stems), options, answerIndex: options.indexOf(correct), explanation: 'Predictive: scope early; changes via control.' };
+      }
+
+      function genL1_AgileValues() {
+        const stems = ['Agile/adaptive approaches value:', 'In agile, the emphasis is on:'];
+        const correct = 'Customer collaboration and responding to change';
+        const options = shuffle([correct, 'Comprehensive documentation', 'Rigid change control', 'Big design up front']);
+        return { topic: 'L1', stem: choice(stems), options, answerIndex: options.indexOf(correct), explanation: 'Agile prefers collaboration and adaptability.' };
+      }
+
+      function genL1_Stakeholders() {
+        const stems = ['Stakeholders are:', 'Who are considered stakeholders?'];
+        const correct = 'Persons or organizations that may affect or be affected by the project';
+        const options = shuffle([correct, 'Only the project team', 'Only the sponsor', 'Only customers']);
+        return { topic: 'L1', stem: choice(stems), options, answerIndex: options.indexOf(correct), explanation: 'Anyone affected by or influencing the project.' };
+      }
+
+      function genL1_PMO() {
+        const stems = ['Which statement about a PMO is true?'];
+        const correct = 'It may be supportive, controlling, or directive';
+        const options = shuffle([correct, 'It always controls projects directly', 'Exists only in agile orgs', 'Replaces the sponsor']);
+        return { topic: 'L1', stem: choice(stems), options, answerIndex: options.indexOf(correct), explanation: 'PMO roles vary across organizations.' };
+      }
+
+      function genL1_OrgStructure() {
+        const stems = ['Which structure gives the PM the most authority?'];
+        const correct = 'Projectized';
+        const options = shuffle([correct, 'Functional', 'Weak matrix', 'Balanced matrix']);
+        return { topic: 'L1', stem: choice(stems), options, answerIndex: options.indexOf(correct), explanation: 'Projectized grants highest PM authority.' };
+      }
+
+      function genL1_BusinessCase() {
+        const stems = ['The primary purpose of a business case is to:', 'Business case mainly:'];
+        const correct = 'Justify the project with cost-benefit analysis';
+        const options = shuffle([correct, 'Define the WBS', 'Assign the team', 'Control scope changes']);
+        return { topic: 'L1', stem: choice(stems), options, answerIndex: options.indexOf(correct), explanation: 'It explains value and feasibility to authorize the project.' };
+      }
+
+      function genL1_ProgElab() {
+        const stems = ['Progressive elaboration means:', 'What does progressive elaboration imply?'];
+        const correct = 'Incrementally detailing plans as knowledge increases';
+        const options = shuffle([correct, 'Reducing scope to meet budget', 'Uncontrolled scope changes', 'Eliminating documentation']);
+        return { topic: 'L1', stem: choice(stems), options, answerIndex: options.indexOf(correct), explanation: 'Plans gain detail over time—not scope creep.' };
+      }
+
+      const L1Generators = [
+        genL1_ProjectVsOperations, genL1_Charter, genL1_TripleConstraint, genL1_LifecyclePredictive,
+        genL1_AgileValues, genL1_Stakeholders, genL1_PMO, genL1_OrgStructure, genL1_BusinessCase, genL1_ProgElab
+      ];
+
+      // L2 Generators
+      function genL2_ProcessGroups() {
+        const correct = '5';
+        const options = shuffle(['3','4',correct,'6']);
+        return { topic: 'L2', stem: 'How many PMBOK process groups are there?', options, answerIndex: options.indexOf(correct), explanation: 'Initiating, Planning, Executing, M&C, Closing.' };
+      }
+      function genL2_ScopeBaseline() {
+        const correct = 'Scope statement, WBS, WBS dictionary';
+        const options = shuffle([correct, 'Scope statement only', 'Requirements traceability matrix', 'WBS only']);
+        return { topic: 'L2', stem: 'Scope baseline includes:', options, answerIndex: options.indexOf(correct), explanation: 'Approved scope components.' };
+      }
+      function genL2_ScheduleBaseline() {
+        const correct = 'Approved version of the schedule model';
+        const options = shuffle([correct, 'Average team velocity', 'Only risk-adjusted plan', 'Stakeholder timetable']);
+        return { topic: 'L2', stem: 'Schedule baseline represents:', options, answerIndex: options.indexOf(correct), explanation: 'Used to measure performance.' };
+      }
+      function genL2_CollectReqTool() {
+        const correct = 'Control charts';
+        const options = shuffle(['Interviews','Delphi technique',correct,'Facilitated workshops']);
+        return { topic: 'L2', stem: 'NOT a tool of Collect Requirements:', options, answerIndex: options.indexOf(correct), explanation: 'Control charts are quality control tools.' };
+      }
+      function genL2_RACI() {
+        const correct = 'Responsible, Accountable, Consulted, Informed';
+        const options = shuffle([correct, 'Report, Analyze, Control, Improve', 'Readiness, Acceptance, Cost, Impact', 'Risk, Assumption, Constraint, Issue']);
+        return { topic: 'L2', stem: 'RACI stands for:', options, answerIndex: options.indexOf(correct), explanation: 'A responsibility assignment matrix type.' };
+      }
+      function genL2_ChangePlan() {
+        const correct = 'Change management plan';
+        const options = shuffle([correct, 'Scope management plan', 'Issue log', 'Communications plan']);
+        return { topic: 'L2', stem: 'Which plan defines how changes are managed?', options, answerIndex: options.indexOf(correct), explanation: 'Part of the project management plan.' };
+      }
+      function genL2_EVDef() {
+        const correct = 'Value of work performed expressed in the approved budget';
+        const options = shuffle([correct, 'Budget at completion', 'Actual cost to date', 'Cost variance at completion']);
+        return { topic: 'L2', stem: 'Earned Value (EV) is:', options, answerIndex: options.indexOf(correct), explanation: 'EV measures completed work value.' };
+      }
+      function genL2_QualRisk() {
+        const correct = 'Probability and impact matrix';
+        const options = shuffle([correct, 'Monte Carlo simulation', 'Sensitivity analysis', 'Decision tree (EMV)']);
+        return { topic: 'L2', stem: 'A qualitative risk analysis tool is:', options, answerIndex: options.indexOf(correct), explanation: 'Quantitative tools include Monte Carlo, sensitivity.' };
+      }
+      function genL2_Lessons() {
+        const correct = 'Record knowledge gained during the project';
+        const options = shuffle([correct, 'List of requirements changes', 'Track defects', 'Plan procurements']);
+        return { topic: 'L2', stem: 'Purpose of a lessons learned register:', options, answerIndex: options.indexOf(correct), explanation: 'Improve future performance.' };
+      }
+      function genL2_ControlQualityPhase() {
+        const correct = 'Executing/Monitoring and Controlling';
+        const options = shuffle([correct, 'Initiating', 'Planning', 'Closing']);
+        return { topic: 'L2', stem: 'Control quality is performed during:', options, answerIndex: options.indexOf(correct), explanation: 'Verifies deliverables meet quality requirements.' };
+      }
+      const L2Generators = [
+        genL2_ProcessGroups, genL2_ScopeBaseline, genL2_ScheduleBaseline, genL2_CollectReqTool, genL2_RACI,
+        genL2_ChangePlan, genL2_EVDef, genL2_QualRisk, genL2_Lessons, genL2_ControlQualityPhase
+      ];
+
+      // L3 Generators (reuse numeric/dynamic)
+      function genL3_EVM() {
+        const PV = randInt(80, 400) * 1000;
+        const EV = randInt(60, 420) * 1000;
+        const AC = randInt(60, 420) * 1000;
+        const kind = Math.random() < 0.5 ? 'CPI' : 'SPI';
+        const val = kind === 'CPI' ? (EV / AC) : (EV / PV);
+        const correct = val.toFixed(2);
+        const opts = new Set([correct]);
+        while (opts.size < 4) {
+          const noise = (Math.random()*0.6 - 0.3);
+          const v = Math.max(0.2, Math.min(2.5, val + noise));
+          opts.add(v.toFixed(2));
+        }
+        const options = shuffle(Array.from(opts));
+        const stem = `Given PV = $${PV.toLocaleString()}, EV = $${EV.toLocaleString()}, AC = $${AC.toLocaleString()}, what is ${kind}?`;
+        const exp = `${kind} = EV / ${kind==='CPI'?'AC':'PV'} = ${correct}`;
+        return { topic: 'L3', stem, options, answerIndex: options.indexOf(correct), explanation: exp };
+      }
+      function genL3_PERT() {
+        const O = randInt(1, 8), M = randInt(O, O+10), P = randInt(M+1, M+12);
+        const expected = (O + 4*M + P)/6;
+        const correct = expected.toFixed(1) + ' days';
+        const opts = new Set([correct]);
+        while (opts.size < 4) {
+          const jitter = (Math.random()*2 - 1)*2;
+          opts.add(Math.max(0.5, expected + jitter).toFixed(1) + ' days');
+        }
+        const options = shuffle(Array.from(opts));
+        const stem = `For an activity with O=${O}, M=${M}, P=${P} days, what is the PERT expected duration?`;
+        const exp = `E=(O+4M+P)/6 = ${expected.toFixed(1)} days`;
+        return { topic: 'L3', stem, options, answerIndex: options.indexOf(correct), explanation: exp };
+      }
+      function genL3_CommChannels() {
+        const n = randInt(4, 22);
+        const channels = (n*(n-1))/2;
+        const options = shuffle([channels.toString(), (n*n).toString(), (n*(n-1)).toString(), (n-1).toString()]);
+        return { topic: 'L3', stem: `You have ${n} stakeholders. How many two-way communication channels exist?`, options, answerIndex: options.indexOf(channels.toString()), explanation: `n(n-1)/2 = ${channels}` };
+      }
+      function genL3_NPVSign() {
+        const years = randInt(3,5);
+        const rate = randInt(5,18)/100;
+        const initial = -randInt(50, 200)*1000;
+        const flows = Array.from({length: years}, ()=>randInt(-40, 190)*1000);
+        const cash = [initial, ...flows];
+        const npv = cash.reduce((acc,cf,i)=>acc + cf/Math.pow(1+rate,i), 0);
+        const correct = npv > 1 ? 'Positive' : npv < -1 ? 'Negative' : 'Approximately zero';
+        const options = shuffle(['Positive','Negative','Approximately zero','Cannot be determined']);
+        return { topic: 'L3', stem: `Cash flows (0..${years}): ${cash.map(v=>'$'+v.toLocaleString()).join(', ')} at ${(rate*100).toFixed(1)}%. NPV is:`, options, answerIndex: options.indexOf(correct), explanation: `NPV = Σ CF/(1+r)^t → ${Math.round(npv)}` };
+      }
+      function genL3_QoC() {
+        const contexts = ['software','manufacturing','construction','service','R&D'];
+        const ctx = choice(contexts);
+        const items = [
+          { stem: `In ${ctx}, which is a prevention cost (COQ)?`, c: 'Training and process improvement', d: ['Inspection and testing','Scrap and rework','Warranty claims'] },
+          { stem: `In ${ctx}, which is an appraisal cost (COQ)?`, c: 'Inspection and testing', d: ['Training and process improvement','Warranty claims','Customer compensation'] },
+          { stem: `In ${ctx}, an external failure cost is:`, c: 'Warranty claims and returns', d: ['Training','Peer reviews','Calibration of test equipment'] },
+          { stem: `In ${ctx}, an internal failure cost is:`, c: 'Scrap and rework', d: ['Training and process improvement','Supplier audits','Customer refunds'] },
+        ];
+        const pick = choice(items);
+        const options = shuffle([pick.c, ...pick.d]);
+        return { topic: 'L3', stem: pick.stem, options, answerIndex: options.indexOf(pick.c), explanation: 'COQ: Prevention, Appraisal, Internal Failure, External Failure.' };
+      }
+      function genL3_Dependency() {
+        const correct = 'Finish-to-Start (FS)';
+        const options = shuffle([correct, 'Start-to-Start (SS)', 'Finish-to-Finish (FF)', 'Start-to-Finish (SF)']);
+        return { topic: 'L3', stem: 'Most common dependency type is:', options, answerIndex: options.indexOf(correct), explanation: 'FS is most widely used.' };
+      }
+      function genL3_CriticalPath() {
+        const correct = 'On the critical path';
+        const options = shuffle([correct, 'Non-critical', 'Fast-tracked', 'Crashing required']);
+        return { topic: 'L3', stem: 'A network path with zero total float is:', options, answerIndex: options.indexOf(correct), explanation: 'Zero float indicates critical path.' };
+      }
+      const L3Generators = [
+        genL3_EVM, genL3_PERT, genL3_CommChannels, genL3_NPVSign, genL3_QoC, genL3_Dependency, genL3_CriticalPath
+      ];
+
+      function generateMany(gens, count, topic) {
+        const out = [];
+        let attempts = 0;
+        while (out.length < count && attempts < count*50) {
+          attempts++;
+          const q = choice(gens)();
+          if (q.topic !== topic) q.topic = topic; // ensure topic label
+          // shuffle options to diversify
+          const zipped = q.options.map((t, i) => ({ t, i }));
+          shuffle(zipped);
+          const options = zipped.map(z => z.t);
+          const answerIndex = zipped.findIndex(z => z.i === q.answerIndex);
+          const qq = { ...q, options, answerIndex };
+          uniquePush(out, qq);
+        }
+        return out;
+      }
+
+      function section(title, qs, startIndex) {
+        const frag = document.createDocumentFragment();
+        const h = document.createElement('div'); h.className = 'set-header'; h.textContent = title; frag.appendChild(h);
+        qs.forEach((q, idx) => {
+          const div = document.createElement('div'); div.className = 'question';
+          const n = startIndex + idx + 1;
+          div.innerHTML = `
+            <div class="question-number">${n}.</div>
+            <div class="question-text">${q.stem}</div>
+            <div class="options">
+              <div class="option">A. ${q.options[0]}</div>
+              <div class="option">B. ${q.options[1]}</div>
+              <div class="option">C. ${q.options[2]}</div>
+              <div class="option">D. ${q.options[3]}</div>
+            </div>
+            <div class="answer">Answer: ${['A','B','C','D'][q.answerIndex]}</div>
+            ${q.explanation ? `<div class="explain">${q.explanation}</div>` : ''}
+          `;
+          frag.appendChild(div);
+        });
+        return frag;
+      }
+
+      function render() {
+        const container = document.getElementById('content');
+        container.innerHTML = '';
+        let index = 0;
+        const l1 = generateMany(L1Generators, COUNT_L1, 'L1');
+        container.appendChild(section('LECTURE 1 — INTRO & FUNDAMENTALS', l1, index));
+        index += l1.length;
+        const l2 = generateMany(L2Generators, COUNT_L2, 'L2');
+        container.appendChild(section('LECTURE 2 — PROCESSES & KNOWLEDGE AREAS', l2, index));
+        index += l2.length;
+        const l3 = generateMany(L3Generators, COUNT_L3, 'L3');
+        container.appendChild(section('LECTURE 3 — PLANNING (SCOPE/SCHEDULE/COST/QUALITY)', l3, index));
+        index += l3.length;
+
+        // Answer key summary per lecture
+        const ak = document.createElement('div'); ak.className = 'answer-key page-break';
+        ak.innerHTML = `
+          <h3>ANSWER KEY SUMMARY</h3>
+          <p>Total: ${index} questions • L1: ${l1.length} • L2: ${l2.length} • L3: ${l3.length}</p>
+          <p class="meta">Generated: ${new Date().toLocaleString()}</p>
+        `;
+        container.appendChild(ak);
+      }
+
+      document.addEventListener('DOMContentLoaded', () => {
+        render();
+        // Signal for wkhtmltopdf that content is ready (if needed)
+        setTimeout(()=>{ window.status = 'ready'; }, 200);
+      });
+    </script>
+  </body>
+  </html>
