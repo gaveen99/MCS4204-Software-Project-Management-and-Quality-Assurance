@@ -1,0 +1,781 @@
+11/2/2025
+
+MASTER OF COMPUTER SCIENCE/
+MASTER OF SCIENCE IN COMPUTER SCIENCE
+
+MCS4204- Software Project Management
+
+Topic 6: Project Quality
+Management
+
+UNIVERSITY OF COLOMBO SCHOOL OF COMPUTING
+
+Dr Thushani A Weerasinghe
+1
+
+Project Quality Management
+• Includes processes incorporating the organization’s quality
+policy regarding planning, managing, and controlling project
+and product quality requirements in order to meet
+stakeholders’ objectives.
+• Supports continuous process improvement activities.
+• is concerned with ensuring that the s/w;
+• meets the needs of the users
+• will perform efficiently and reliably
+• will be delivered on time and within the budget
+
+• Formalizing quality management is especially important for
+large or long-lifetime projects
+Master of Computer Science/ Master of Science in Computer Science
+
+2 November 2025
+
+2
+
+2
+
+1
+
+11/2/2025
+
+Organizational-Level and Project-Level QM
+Organizational-Level
+• Establish a framework of organisational processes and standards
+that will lead to high-quality software.
+• Define the software development process to be used and standards
+that should be applied to the software and related documentation
+(e.g. SRS, SDS and code).
+Project-Level
+• Prepare a quality plan (quality goals, processes and standards) for the
+project.
+• Apply the quality processes
+• check whether the planned processes have been followed, and
+• Ensure that the project outputs meet the defined project standards.
+Master of Computer Science/ Master of Science in Computer Science
+
+2 November 2025
+
+3
+
+3
+
+Project Quality Management
+1. Plan Quality Management—identify the quality
+requirements.
+2. Manage/Assure Quality—Introduce quality
+assurance processes, procedures and standards.
+Manage the quality processes by preparing tests
+and evaluation instruments.
+3. Control Quality—Verify that the quality
+requirements are met. Compare the work results
+with the quality requirements to ensure the
+result is acceptable
+Master of Computer Science/ Master of Science in Computer Science
+
+2 November 2025
+
+4
+
+4
+
+2
+
+11/2/2025
+
+Project Quality Management Interrelations
+
+Master of Computer Science/ Master of Science in Computer Science
+
+2 November 2025
+
+5
+
+5
+
+Quality and Grade
+• Quality (of delivered performance or result)- The degree to
+which a set of inherent characteristics fulfils the requirements
+and and satisfies user needs (A high-quality product has no
+defects).
+• Grade - A category label assigned to deliverables having the
+same functional use and technical characteristics (The number
+of features or scope).
+• The project manager and the team are responsible for
+delivering the final product at the required levels of both quality
+and grade.
+• Failure to meet quality requirements is always a problem. But a
+low-grade product may not be a problem if it is of high quality.
+Master of Computer Science/ Master of Science in Computer Science
+
+2 November 2025
+
+6
+
+6
+
+3
+
+11/2/2025
+
+Prevention and Inspection
+• Prevention -keeping errors out of the process
+• Inspection - keeping errors out of the hands of the
+customer
+• Prevention is preferred over inspection- Design quality into
+deliverables
+• The cost of preventing mistakes is generally much less
+than the cost of correcting mistakes when they are found
+by inspection or during usage.
+Master of Computer Science/ Master of Science in Computer Science
+
+2 November 2025
+
+7
+
+7
+
+Five levels of increasingly effective quality
+management
+1. Let the customer find the defects. This can lead to warranty
+issues, recalls, loss of reputation, and rework costs.
+2. Detect and correct the defects before the deliverables are
+sent to the customer. This incurs appraisal costs and internal
+failure costs.
+3. Use quality assurance to examine and correct the process
+itself and not just special defects.
+4. Incorporate quality into the planning and designing of the
+project and product.
+5. Create a culture throughout the organization that is aware
+and committed to quality in processes and products.
+Master of Computer Science/ Master of Science in Computer Science
+
+2 November 2025
+
+9
+
+9
+
+4
+
+11/2/2025
+
+Role of Quality Management Team
+• Independent team – not part of the S/W development team
+• Take an objective view of the quality of the software
+• Report on the software quality without being influenced by
+software development issues.
+• Have organisation-wide responsibility for quality
+management
+• Report to management above the project manager level
+• Ensures that the organisational goals of quality are not
+influenced by the short-term budget and schedule
+considerations.
+Master of Computer Science/ Master of Science in Computer Science
+
+2 November 2025
+
+10
+
+2 November 2025
+
+12
+
+10
+
+Plan Quality Management
+
+Master of Computer Science/ Master of Science in Computer Science
+
+12
+
+5
+
+11/2/2025
+
+Data gathering: Benchmarking
+• Involves comparing actual or planned project practices
+or the project’s quality standards to those of comparable
+projects.
+• Aims to;
+• identify best practices,
+• generate ideas for improvement, and
+• provide a basis for measuring performance.
+• Benchmarked projects may exist within the performing
+organization or outside of it. Also, it can be within the
+same application area or another application area.
+
+Master of Computer Science/ Master of Science in Computer Science
+
+2 November 2025
+
+14
+
+14
+
+Cost of Non-Conformance and Conformance
+
+(cost at which it can be sold)
+
+Master of Computer Science/ Master of Science in Computer Science
+
+2 November 2025
+
+15
+
+15
+
+6
+
+11/2/2025
+
+Cost of Quality
+• Refers to the total cost of the conformance and the nonconformance work that should be done as a compensatory
+effort.
+• Total investment in
+• preventing nonconformance to requirements,
+• appraising the product or service for conformance to
+requirements (evaluating, measuring, auditing, and
+testing), and
+• failing to meet requirements (rework) • Failure costs (Cost of Poor Quality)
+• Internal costs -found by the project team
+• External costs -found by the customer/client
+Master of Computer Science/ Master of Science in Computer Science
+
+2 November 2025
+
+16
+
+2 November 2025
+
+17
+
+16
+
+Cost of Quality
+
+Master of Computer Science/ Master of Science in Computer Science
+
+17
+
+7
+
+11/2/2025
+
+Components of Quality Management Plan
+• Quality standards that will be used by the project
+• Quality objectives of the project
+• Quality roles and responsibilities
+• Project deliverables and processes subject to quality review
+• Quality control and quality management activities planned
+for the project
+• Quality tools that will be used for the project and
+• Major procedures relevant to the project, such as dealing
+with nonconformance, corrective actions procedures, and
+continuous improvement procedures.
+Master of Computer Science/ Master of Science in Computer Science
+
+2 November 2025
+
+19
+
+19
+
+Manage Quality (Quality Assurance)
+
+Master of Computer Science/ Master of Science in Computer Science
+
+2 November 2025
+
+21
+
+21
+
+8
+
+11/2/2025
+
+Tools of quality
+1. Cause-and-effect diagram
+2. Check sheet
+3. Control chart
+4. Histogram
+https://marketingskull.com/define-flow-chart5. Pareto chart
+control-chart-run-chart-pareto-diagram6. Scatter diagram
+histogram/
+7. Flow chart / Run chart
+https://www.projectcubicle.com/pareto-chart-pareto-analysis/
+Master of Computer Science/ Master of Science in Computer Science
+
+2 November 2025
+
+22
+
+2 November 2025
+
+23
+
+22
+
+Cause-and-effect diagram
+
+Master of Computer Science/ Master of Science in Computer Science
+
+23
+
+9
+
+11/2/2025
+
+Example: Cause-and-effect diagram
+
+24
+
+2 November 2025
+
+25
+
+25
+
+10
+
+11/2/2025
+
+Master of Computer Science/ Master of Science in Computer Science
+
+2 November 2025
+
+26
+
+26
+
+Histogram
+•
+
+A special form of bar chart used to describe the central tendency,
+dispersion, and shape of a statistical distribution.
+
+Less severe defects - Customers may
+experience mean inconvenience.
+High-severity defects -may cause
+system downtime and affect
+customers' business
+
+Master of Computer Science/ Master of Science in Computer Science
+
+# days the defect reports
+have been opened=
+Response time in fixing
+defects during the formal
+testing phases
+
+2 November 2025
+
+27
+
+27
+
+11
+
+11/2/2025
+
+Pareto Charts
+• Indicates the frequency of defects, as well as their cumulative
+impact.
+• Useful to find the defects to prioritize in order to observe the
+greatest overall improvement.
+80/20 principle: For
+cumulative
+total of the
+sample
+
+many events, roughly
+80% of the effects
+come from 20% of
+the causes.
+
+Categories
+contributing to 80%
+of the problems are
+often referred to as
+the ‘vital few’
+whereas the others
+are labelled the
+‘useful many’ 28
+
+28
+
+Example: Pareto Charts
+
+https://asq.org/quality-resources/pareto
+Master of Computer Science/ Master of Science in Computer Science
+
+2 November 2025
+
+29
+
+29
+
+12
+
+11/2/2025
+
+80/20 Rule
+
+Master of Computer Science/ Master of Science in Computer Science
+
+2 November 2025
+
+30
+
+30
+
+Scatter diagram
+• An efficient communication tool
+• Can check the degree of relationship between the data in the
+form of pairs.
+• Find the direction (positive, negative, or no relationship)
+and the degree of relationship (correlation coefficient
+between +1 and -1)
+E.g An analysis of program complexity
+and the number of defects found:
++ve correlation: Can use program
+complexity to predict defect level.
+Reduce the program complexity to
+reduce the chance for defects and
+make programs easier to maintain
+Master of Computer Science/ Master of Science in Computer Science
+
+2 November 2025
+
+32
+
+32
+
+13
+
+11/2/2025
+
+Defects/KLOC
+(Jiju Antony, 2005)
+
+33
+
+33
+
+Flow chart
+• A graphical representation
+of a process showing the
+relationships among the
+process steps.
+• It shows the activities,
+decision points, branching
+loops, parallel paths, and the
+overall order of processing
+by mapping the operational
+details of procedures that
+exist within a horizontal
+value chain.
+Master of Computer Science/ Master of Science in Computer Science
+
+2 November 2025
+
+34
+
+34
+
+14
+
+11/2/2025
+
+Example: Flow chart
+
+Master of Computer Science/ Master of Science in Computer Science
+
+2 November 2025
+
+35
+
+35
+
+Run chart
+• One of the most useful tools in quality improvement to
+
+determine that a change has occurred •
+•
+
+•
+•
+Master of Computer Science/ Master of Science in Computer Science
+
+Monitor the performance of
+one or more processes over
+time to detect trends, shifts
+or cycles.
+Compare a performance
+measure before and after
+the solution
+implementation to measure
+its impact.
+Focus attention on truly
+vital changes in the
+process.
+Assess whether improved
+performance has been
+2 November 2025
+36
+sustained.
+
+36
+
+15
+
+11/2/2025
+
+Non-random rules for Run charts
+- evidence of a non-random signal of change
+
+37
+
+Control Chart
+ A random distribution of points within the limits implies a stable process.
+ identify the important causes of variation common to all the points.
+ If the distribution is not random, then the process is unstable.
+ Take action to understand what could be contributing to the special
+causes of variation.
+
+(LCL)
+
+38
+
+16
+
+11/2/2025
+
+Control
+chart
+-can provide more
+information and
+insight into the
+nature and sources
+of variation in a
+process than run
+charts
+-center line
+represents the
+average of the
+measurement that
+is being tracked.
+Master of Computer Science/ Master of Science in Computer Science
+
+2 November 2025
+
+39
+
+39
+
+Manage Quality Tools and Techniques:
+Quality Audit
+•
+
+•
+
+•
+
+A structured, independent process used to determine if project
+activities comply with organizational and project policies, processes,
+and procedures.
+Usually conducted by a team external to the project (e.g.
+Organization’s internal audit department, PMO, or by an auditor
+external to the organization).
+Aims to;
+• Identify all good and best practices being implemented;
+• Identify all nonconformity, gaps, and shortcomings;
+• Share good practices introduced or implemented in similar projects
+• Proactively offer assistance in a positive manner to improve the
+implementation of processes to help raise team productivity
+• Highlight contributions of each audit in the lessons learned
+repository of the organization.
+2 November 2025
+
+41
+
+41
+
+17
+
+11/2/2025
+
+Design for Excellence (DfX)
+• A set of technical guidelines that may be applied during
+the design of a product for the optimization of a specific
+aspect of the design.
+• DfX can control or even improve the product’s final
+characteristics. The X in DfX can be different aspects of
+product development, such as reliability, deployment,
+assembly, manufacturing, cost, service, usability, safety,
+and quality.
+• Using the DfX may result in cost reduction, quality
+improvement, better performance, and customer
+satisfaction.
+Master of Computer Science/ Master of Science in Computer Science
+
+2 November 2025
+
+42
+
+Master of Computer Science/ Master of Science in Computer Science
+
+2 November 2025
+
+43
+
+42
+
+43
+
+18
+
+11/2/2025
+
+Problem Solving
+• Effective and systematic problem solving is a
+fundamental element in quality assurance and quality
+improvement.
+• Elements of problem-solving methods
+• Defining the problem,
+• Identifying the root cause,
+• Generating possible solutions,
+• Choosing the best solution,
+• Implementing the solution, and
+• Verifying solution effectiveness.
+Master of Computer Science/ Master of Science in Computer Science
+
+2 November 2025
+
+44
+
+44
+
+4
+
+A systematic and structured
+approach for software
+quality improvement
+
+1
+
+3
+
+Master of Computer Science/ Master of Science in Computer Science
+
+2
+
+2 November 2025
+
+45
+
+45
+
+19
+
+11/2/2025
+
+Control Quality
+
+Master of Computer Science/ Master of Science in Computer Science
+
+2 November 2025
+
+46
+
+46
+
+Quality Control Process
+• Measures the completeness, compliance, and fitness
+for use of a product or service prior to user acceptance and
+final delivery.
+• Measures all steps, attributes, and variables used to
+verify conformance or compliance to the specifications
+stated during the planning stage.
+• Should be performed throughout the project to formally
+demonstrate with reliable data, that the sponsor’s/clients
+and/or user acceptance criteria have been met.
+• The level of effort to control quality and the degree of
+implementation may differ between types of projects and
+methodologies used to develop the software.
+Master of Computer Science/ Master of Science in Computer Science
+
+2 November 2025
+
+47
+
+47
+
+20
+
+11/2/2025
+
+Project Quality Management: Review
+Exercise
+1. What are the 3 main processes of Project QM?
+2. What are the purposes and outcomes of each
+main PQM process?
+3. Compare control charts and run charts
+
+Master of Computer Science/ Master of Science in Computer Science
+
+2 November 2025
+
+52
+
+52
+
+System requirements
+• Resource requirements – specify allowable costs
+• Functional requirements –specify what system do
+• Non-functional/quality requirements – specify
+how well the system operates
+• Quality factors (internal factors that the developers
+would be aware of and external factors defining the
+external view of the system held by users)
+• Quality in Use (e.g. effectiveness, productivity, safety
+and satisfaction).
+
+Master of Computer Science/ Master of Science in Computer Science
+
+2 November 2025
+
+56
+
+56
+
+21
+
+11/2/2025
+
+Software Specification and Evaluation
+Activities
+• Development process: SDLC process
+• Product quality management: Systematic examination of
+the product or computer system as part of quality
+assurance and quality control
+• Product/Service supply: a contract with the acquirer for
+the supply of a system/product/ service under the terms
+of a contract
+• Product/Service acquisition: including product selection
+and acceptance testing, when acquiring or procuring a
+system/product/service from a supplier
+• Product maintenance: improvement of the product
+based on quality in use measures (e.g. effectiveness,
+productivity, safety and satisfaction).
+Master of Computer Science/ Master of Science in Computer Science
+
+2 November 2025
+
+57
+
+57
+
+22
+
+

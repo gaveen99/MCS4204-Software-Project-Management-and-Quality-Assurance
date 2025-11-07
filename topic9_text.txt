@@ -1,0 +1,627 @@
+11/2/2025
+
+MASTER OF COMPUTER SCIENCE/
+MASTER OF SCIENCE IN COMPUTER SCIENCE
+
+MCS4204- Software Project Management
+
+Topic 9: Project Procurement
+Management
+Dr Thushani A. Weerasinghe
+
+UNIVERSITY OF COLOMBO SCHOOL OF COMPUTING
+
+Dr Thushani A Weerasinghe
+1
+
+Project Procurement Management
+• Defines the processes necessary to purchase or acquire
+products, services, or results needed from outside the project
+team.
+• Includes management and control processes required to
+develop and administer agreements.
+• Significant legal obligations and penalties can be tied to the
+procurement process.
+• PM must involve in the creation of the agreements. But he/she
+may not have the authority to sign the agreement.
+• PM does not have to be a trained expert in procurement
+management laws and regulations but should be familiar enough
+with the procurement process to make intelligent decisions
+regarding contracts and contractual relationships.
+Master of Computer Science/ Master of Science in Computer Science
+
+1 November
+2025
+
+2
+
+2
+
+1
+
+11/2/2025
+
+Master of Computer Science/ Master of Science in Computer Science
+
+1 November
+2025
+
+3
+
+3
+
+Procurement Management processes
+1. Plan Procurement Management Process
+i. Document project procurement decisions
+ii. Specify the approach
+iii. Identify potential sellers
+
+2. Conduct Procurement Process
+i. Obtain seller responses,
+ii. Select a seller
+iii. Award the contract
+
+3. Control Procurement Process
+i.
+ii.
+iii.
+iv.
+
+Manage procurement relationships
+Monitor contract performance
+Make changes and corrections as appropriate
+Close out contracts
+4
+
+4
+
+2
+
+11/2/2025
+
+Buyer & Seller /
+Product Owner & Contractor
+• The seller may be identified as a
+contractor, vendor, service provider
+or supplier. During the contract life
+cycle, the seller may be viewed,
+• first as a bidder
+• next, as the selected source
+• Buyer may be
+• finally, as the contracted supplier
+• a service requestor
+or vendor
+• the acquiring organization
+• the purchaser
+• the final product owner
+1 November
+2025
+
+6
+
+6
+
+Agreements and contracts
+
+7
+
+7
+
+3
+
+11/2/2025
+
+Activity 1
+• Define the following terms and discuss their
+differences.
+1. Contracts and agreements
+2. Service-Level Agreement (SLA) and Service-Level
+Commitment (SLC)
+3. Memorandum of Understanding (MOU) and
+Memorandum of Agreement (MOA)
+
+8
+
+8
+
+Three Major Contract Types
+All legal contractual relationships generally fall into
+one of two broad families:
+1. Fixed-price
+2. Cost-reimbursable
+3. Hybrid type: Time and Materials contract
+
+13
+
+13
+
+4
+
+11/2/2025
+
+Fixed-Price Contracts
+• involves setting a fixed total price for a defined product,
+service, or result to be provided.
+• should be used when the requirements are well defined
+and no significant changes to the scope are expected.
+• Types of fixed-price contracts include:
+1. Firm fixed price (FFP)
+2. Fixed price incentive fee (FPIF)
+3. Fixed price with economic price adjustments
+(FPEPA)
+
+Master of Computer Science/ Master of Science in Computer Science
+
+1 November
+2025
+
+14
+
+14
+
+Firm Fixed Price (FFP):
+• The price for goods is set at the outset and
+not subject to change unless the scope of
+work changes.
+• The most commonly used type
+• It is favored by most buying organizations
+
+Master of Computer Science/ Master of Science in Computer Science
+
+1 November
+2025
+
+15
+
+15
+
+5
+
+11/2/2025
+
+Fixed Price Incentive Fee (FPIF)
+• Gives the buyer and seller some flexibility
+allowing for deviation from performance, with
+financial incentives tied to achieving agreedupon metrics.
+• Typically, such financial incentives are related to
+the cost, schedule, or technical performance of
+the seller.
+• Under FPIF contracts, a price ceiling is set, and
+all costs above the price ceiling are the
+responsibility of the seller.
+Master of Computer Science/ Master of Science in Computer Science
+
+1 November
+2025
+
+16
+
+16
+
+Fixed Price with Economic Price
+Adjustments (FPEPA)
+• This type is used whenever the seller’s
+performance period spans a considerable
+period of years, or if the payments are made
+in a different currency.
+• It is a fixed-price contract, but with a special
+provision allowing for predefined final
+adjustments to the contract price due to
+changed conditions, such as inflation
+changes or cost increases (or decreases) for
+specific commodities.
+Master of Computer Science/ Master of Science in Computer Science
+
+1 November
+2025
+
+17
+
+17
+
+6
+
+11/2/2025
+
+Comparison of Different types of Contracts
+
+Master of Computer Science/ Master of Science in Computer Science
+
+1 November
+2025
+
+18
+
+18
+
+Example: Find the final price
+Target Cost = $200,000
+Target Profit = $40,000
+Target Price= $240,000
+Ceiling Price = $270,000
+Share Ratio (Buyer/Seller) = 70/30
+If Actual Cost = $210,000,
+Overrun = $210,000 – $200,000 = $10,000
+Seller’s share of overrun (penalty) = 30% × $10,000 = $3,000
+Adjusted Profit = $40,000 – $3,000 = $37,000
+Final Price = Actual Cost + Adjusted Profit = $210,000 + $37,000 =
+$247,000
+The buyer pays $247,000 to the seller. The seller’s profit dropped from
+$40,000 to $37,000 due to the overrun.
+What would be the final price if Actual Cost is $190,000?
+19
+
+7
+
+11/2/2025
+
+Activity 2
+A fixed-price-plus-incentive-fee (FPI) contract has a target cost of
+$7,000,000, a target profit of $650,000, a ceiling price of
+$7,500,000, and a share ratio of 70/30. The actual cost of the
+project was $6,000,000. Calculate the final fee and the final
+price.
+Adjusted profit=Target profit + ((Target cost-Actual Cost)*Seller ratio)
+=$650,000 + (($7,000,000- $6,000,000)*30%
+=$650,000 + ($1,000,000*30%)
+= $650,000 + $300,000
+=$950,000
+Final Price=Actual cost + adjusted profit= $6,000,000 + $950,000 = $6,950,000
+Master of Computer Science/ Master of Science in Computer Science
+
+1 November
+2025
+
+20
+
+20
+
+Activity 2
+A fixed-price-plus-incentive-fee (FPI) contract has a target cost of
+$7,000,000, a target profit of $650,000, a ceiling price of
+$7,500,000, and a share ratio of 70/30. The actual cost of the
+project was $7,200,000. Calculate the final fee and the final
+price.
+Adjusted profit=Target profit + ((Target cost-Actual Cost)*Seller ratio)
+=$650,000 + (($7,000,000- $7,200,000)*30%
+=$650,000 + (-$200,000*30%)
+= $650,000 + $60,000
+=$710,000
+Final Price=Actual cost + adjusted profit= $7,200,000 + $710,000 = $7,910,000
+This exceeds the ceiling price. Hence Final Price =7,500,000
+Master of Computer Science/ Master of Science in Computer Science
+
+2 November
+2025
+
+21
+
+21
+
+8
+
+11/2/2025
+
+Cost-reimbursable contracts
+This category of contract involves payments (cost
+reimbursements) to the seller for all legitimate actual costs
+incurred for completed work, plus a fee representing seller
+profit.
+This type should be used if the scope of work is expected
+to change significantly during the execution of the contract.
+Types of contracts can include:
+1. Cost plus fixed fee (CPFF)
+2. Cost plus incentive fee (CPIF)
+3. Cost plus award fee (CPAF)
+Master of Computer Science/ Master of Science in Computer Science
+
+1 November
+2025
+
+22
+
+22
+
+Cost Plus Fixed Fee (CPFF)
+• The seller is reimbursed for all allowable
+costs for performing the contract work and
+receives a fixed-fee payment calculated as
+a percentage of the initial estimated
+project costs.
+• Fee amounts do not change unless the
+project scope changes.
+
+Master of Computer Science/ Master of Science in Computer Science
+
+1 November
+2025
+
+23
+
+23
+
+9
+
+11/2/2025
+
+Cost Plus Incentive Fee (CPIF)
+• The seller is reimbursed for all allowable costs for
+performing the contract work and receives a
+predetermined incentive fee based on achieving
+certain performance objectives as outlined in the
+contract.
+• If the final costs are less or greater than the original
+estimated costs, then both the buyer and seller
+share costs from the departures based upon a prenegotiated cost-sharing formula/ratio (e.g. 80/20 :
+80 for buyer and 20 for seller).
+• Final Incentive Fee = ((Target cost – Actual Cost) *
+Seller’s sharing ratio) + Target fee
+24
+
+24
+
+Activity 3
+A cost-plus-incentive-fee contract has the following
+characteristics:
+o
+Sharing ratio:
+80/20
+o
+Target cost:
+$100,000
+o
+Target fee:
+$12,000
+o
+Maximum fee:
+$15,000
+o
+Minimum fee:
+$10,000
+How much will the seller be reimbursed if the cost of
+performing the work is $80,000?
+25
+
+25
+
+10
+
+11/2/2025
+
+Cost Plus Award Fee (CPAF)
+• The seller is reimbursed for all legitimate
+costs, but the majority of the fee is earned
+based on the satisfaction of certain broad
+subjective performance criteria that are
+defined and incorporated into the contract.
+• The determination of fee is based solely
+on the subjective determination of seller
+performance by the buyer and is generally
+not subject to appeals.
+Master of Computer Science/ Master of Science in Computer Science
+
+1 November
+2025
+
+28
+
+28
+
+Time and material contracts (T&M).
+• Also called time and means contracts
+• A hybrid type of contractual arrangement with
+aspects of both cost-reimbursable and fixed-price
+contracts.
+• Often used for;
+• staff augmentation (hire staff for the project),
+• acquisition of experts and any outside support
+• when a precise statement of work cannot be
+quickly prescribed.
+
+• Example: $1k per day plus expenses or material
+cost.
+1 November
+2025
+
+32
+
+32
+
+11
+
+11/2/2025
+
+Legal Contractual Relationships
+
+Master of Computer Science/ Master of Science in Computer Science
+
+1 November
+2025
+
+33
+
+33
+
+Risks Associated with Contracts
+
+https://humanassetrm.wordpress.com/2014/05/24/procurements-and-risk/
+34
+
+34
+
+12
+
+11/2/2025
+
+QUIZ
+If the software developing company (contractor) can get
+all their expenses related to the contract work
+reimbursed and receive a predetermined incentive fee as
+outlined in the contract, what type of contract is it?
+(a) Cost Plus Award Fee (CPAF)
+(b) Cost Plus Incentive Fee (CPIF)
+(c) Fixed Price Incentive Fee (FPIF)
+(d) Fixed Price with Economic Price Adjustments (FPEPA)
+35
+
+35
+
+Source/Seller Selection Process
+
+36
+
+36
+
+13
+
+11/2/2025
+
+PLAN PROCUREMENT MANAGEMENT: TOOLS AND TECHNIQUES>
+
+Source Selection Analysis Methods
+
+37
+
+37
+
+Source Selection Analysis
+1. Least cost
+Appropriate for procurements of a standard or routine nature
+where well-established practices and standards exist and a
+specific and well-defined outcome is expected, and which
+can be executed at different costs.
+2. Qualifications only
+This applies when the procurement value is relatively small,
+and the time and cost of a full selection process would not
+make sense. The buyer establishes a short list and selects
+the bidder with the best credibility, qualifications, experience,
+expertise, areas of specialization, and references.
+38
+
+38
+
+14
+
+11/2/2025
+
+Source Selection Analysis contd.
+3. Quality-based/highest technical proposal score
+The selected firm is asked to submit a proposal with both technical and
+cost details and is then invited to negotiate the contract if the technical
+proposal proves acceptable.
+• Using this method, technical proposals are first evaluated based on the
+quality of the technical solution offered.
+• The seller who submitted the highest-ranked technical proposal is
+selected if their financial proposal can be negotiated and accepted.
+
+4. Quality and cost-based
+The quality and cost-based method allows cost to be included as a
+factor in the seller selection process.
+When risk and/or uncertainty are greater for the project, quality
+should be a key element when compared to cost.
+39
+
+39
+
+Source Selection Analysis contd.
+5. Sole source
+• The buyer asks a specific seller to prepare technical and
+financial proposals, which are then negotiated. Since there is
+no competition, this method is acceptable only when properly
+justified and should be viewed as an exception.
+
+6. Fixed budget
+• Appropriate only when the SOW (Statement of Work) is
+precisely defined, no changes are anticipated, and the budget
+is fixed and cannot be exceeded.
+• Sellers can adapt the scope and quality of their offer to the
+given budget. The buyer should ensure that the budget is
+compatible with the SOW (Statement of Work) and that the
+seller will be able to perform the tasks within the budget.
+40
+
+40
+
+15
+
+11/2/2025
+
+QUIZ
+• Which source selection method allows you to select the
+seller who submitted the highest-ranked technical
+proposal if their financial proposal can be negotiated and
+accepted?
+a) Least cost
+b) Qualifications only
+c) Quality-based/highest technical proposal score
+d) Quality and cost-based
+e) Fixed budget
+f) Sole source
+41
+
+41
+
+Source Selection Process
+
+44
+
+44
+
+16
+
+11/2/2025
+
+Conduct Procurements
+
+Master of Computer Science/ Master of Science in Computer Science
+
+1 November
+2025
+
+45
+
+45
+
+Control Procurements
+
+46
+
+17
+
+11/2/2025
+
+Data Analysis
+Performance Reviews
+•
+
+•
+
+Performance reviews for contracts measure, compare and analyze
+quality, resource schedule, and cost performance against the
+agreement.
+This includes identifying work packages that are ahead or behind
+schedule, over or under budget, or have resource or quality issues.
+
+Earned Value Analysis (EVA)
+•
+
+Schedule and cost variances, along with schedule and cost
+performance indexes, are calculated to determine the degree of
+variance from the target.
+
+Trend Analysis
+•
+
+To forecast estimate at completion (EAC) for cost performance to
+see if performance is improving or deteriorating.
+47
+
+47
+
+Q&A
+
+48
+
+18
+
+

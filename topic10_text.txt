@@ -1,0 +1,831 @@
+10/11/2025
+
+MASTER OF COMPUTER SCIENCE/
+MASTER OF SCIENCE IN COMPUTER SCIENCE
+
+MCS 4204 –
+Software Project Management and Quality
+Assurance
+
+Project Risk Management
+Dr. Thushani A Weerasinghe
+
+UNIVERSITY OF COLOMBO SCHOOL OF COMPUTING
+
+1
+
+Intended Learning Outcomes
+• At the end of this topic, you’ll be able to;
+• Identify potential risks in software projects
+• Categorize and prioritize risks
+• Quantify the likely effect of risks
+• Decide on the risk actions
+• Make plans to deal with risks
+
+2
+
+1
+
+10/11/2025
+
+What is a risk?
+• An uncertain event or condition that can cause a
+threat or opportunity to the project.
+• An unforeseen event that can impact the project’s
+cost, schedule, or quality.
+• Relates to the future
+• Measured in terms of probability of occurrence
+(high-low) and consequences (loss: high-low)
+• Involves cause and effect
+• Risk Categories
+- Known/Predictable/Unpredictable
+3
+
+Risk Management (RM)
+• An attempt to minimize the chances of failure or take
+the opportunity caused by unplanned events/risks.
+• Aim to identify, quantify and take actions to minimize
+the effect of negative risks or face the positive risks
+• Risk management involves additional cost
+• RM is cost effective only if the cost of RM is considerably
+less than the loss incurred
+
+• It’s not easy to measure the total cost of RM
+• Involves two key components:
+• risk assessment and
+• risk control
+4
+
+2
+
+Project
+Risk Management
+
+10/11/2025
+
+5
+
+Activity
+• What are the processes in the risk management
+process group?
+
+6
+
+3
+
+10/11/2025
+
+1. Plan Risk Management
+
+8
+
+Components of Risk Management Plan
+1. Risk strategy: The general approach to managing project risks
+2. Methodology: The approaches, tools, and data sources to
+perform risk management
+3. Roles and responsibilities: Risk management team and their
+responsibilities
+4. Funding: Funds needed to perform Risk Management
+activities. Establishes protocols for the application of
+contingency and management reserves.
+5. Timing: Defines when and how often the Project Risk
+Management processes will be performed
+6. Risk categories: Provides a risk breakdown structure (RBS)
+
+10
+
+4
+
+10/11/2025
+
+Components of Risk Management…Contd.
+7. Stakeholder risk appetite: Measurable risk thresholds
+around each project objective
+8. Definitions of risk probability and impacts: Definitions
+specific to the project context and reflect the risk appetite
+and thresholds
+9. Probability and impact matrix: Opportunities and threats
+represented in a common probability and impact matrix
+10. Reporting formats: Format of the risk register, risk report
+and other outputs from the risk management process
+11. Tracking: Describe how risk activities will be recorded and
+how risk management processes will be audited
+
+11
+
+2. Risk Identification
+• Two main approaches;
+1. Checklist
+• Lists a set of risks that have been found more
+likely to occur and
+• Suggests countermeasures for each risk
+2. Brainstorming
+• Representatives of the main stakeholders
+discuss and identify the problems that might
+occur
+
+• Can do a SWOT analysis
+15
+
+5
+
+10/11/2025
+
+Categorizing Risk
+Related to the business cash flows, customers
+and procurement process
+Related to
+Management
+structure and
+system.
+
+Commercial
+
+Management
+Including
+management
+support for
+planning and
+controlling
+
+Technology
+
+External
+Relates to legislation, weather,
+exchange rates and competition
+
+Appropriateness
+of technology
+used to
+implement the
+application and
+faults in the
+delivered product
+
+17
+
+RBS
+Prepare a Risk
+Breakdown
+Structure by
+categorizing all
+risks affecting
+the project's life
+cycle.
+
+18
+
+6
+
+10/11/2025
+
+RBS for Software Development : https://www.pmi.org/learning/library/risk-breakdown-structure-understand-risks-1042
+
+e.g.
+RBS
+
+19
+
+3-4. Perform Risk Analysis
+• Risk Probability Definitions and Impacts
+
+21
+
+7
+
+10/11/2025
+
+3. Qualitative Method of Risk Estimation
+Probability
+
+Range
+
+High
+
+Greater than 50% chance of happening
+
+Significant
+
+30-50% chance of happening
+
+Moderate
+
+10-29% chance of happening
+
+Low
+
+Less than 10% chance of happening
+Qualitative description of risk probability and associated range values
+
+Impact Level
+
+Range
+
+High
+
+More than 30% above budget expenditure
+
+Significant
+
+20-29% above budget expenditure
+
+Moderate
+
+10-19% above budget expenditure
+
+Low
+
+Within 10 % of budget expenditure
+Qualitative descriptors of impact on cost and associated range values
+
+22
+
+A probability impact matrix
+
+Impact
+
+Tolerance line
+High
+
+R6
+
+R1
+
+Significant
+
+R2, R5
+
+R3
+R4
+
+Moderate
+Low
+Low
+
+Moderate
+
+Significant
+
+High
+
+Probability
+23
+
+8
+
+10/11/2025
+
+4. Risk Assessment: Quantitative methods
+• Risk Exposure: Expected Value of the loss for
+the risk
+Risk Exposure = Risk Likelihood x Risk Impact
+RE(R) = Prob(R) x Loss(R)
+• Risk Likelihood: The probability of a risk.
+• Risk Impact: The total loss incurred if the risk happens.
+
+24
+
+Probability and Impact Matrix with Scoring
+Scheme
+
+25
+
+9
+
+10/11/2025
+
+Risk Assessment Contd.…
+• E.g.
+A project depends on a data center which is vulnerable
+to fire. It is estimated that there is a 1 in 1000 chance
+fire actually happening. If a fire occurred a new
+computer configuration could be established for
+Rs.500,000. Find the risk exposure.
+RE(R) = Prob(R) x Loss(R)
+RE=1/1000 x 500,000 =Rs.500
+This is the minimum sum an insurance company
+would require as a premium.
+26
+
+27
+
+10
+
+10/11/2025
+
+Prioritizing Risks
+
+28
+
+Prioritizing Risks: Factors to be considered
+• Reducing risk exposure by reducing Likelihood
+and Impact
+• Confidence in risk assessment
+• Some risk assessments are very poor
+
+• Compound risks
+• Some risks depend on others
+
+• The number of similar risks
+
+29
+
+11
+
+10/11/2025
+
+5. Plan Risk Responses
+How to deal with risks?
+• Risk Acceptance (Tolerate)
+• Approval of operations under exposure to the risk,
+according to the organizations policies and criteria
+for risk acceptance
+• Should also involve provision for recovery under
+business continuity management
+
+• Risk Avoidance (Terminate)
+• Changing of re-engineering the business process
+• Terminate the activity giving rise to risk
+30
+
+Risk Planning …contd.
+• Risk Reduction (Treat)
+• Application of security controls
+• Treat risk with appropriate control measures and
+mechanisms
+
+• Risk Transfer
+• Transfer the risk to another party
+• Insurance or outsourcing
+
+31
+
+12
+
+10/11/2025
+
+6. Implement the Risk Response Plan
+1. Execute the risk response plan to manage the
+project risks.
+2. Track all risks in the risk register.
+3. Integrate the risk response plan into the
+project management plan and schedules.
+4. Implement a method to monitor, control, and
+track the risk response plan.
+5. Include a mechanism for addressing the risk
+response plan when intended results are not
+achieved.
+32
+
+Maintaining the Risk Register
+• Refer to the project plan
+and record the most
+threatening risks in a risk
+register.
+• After starting the project, all
+emerging risks need to be
+added.
+• Review and amend the
+register at regular intervals.
+• Close the entry once the
+relevant risky activities are
+completed.
+33
+
+13
+
+10/11/2025
+
+7. Monitor Risks
+The process of monitoring the implementation of risk response
+plans, tracking identified risks, identifying and analyzing new
+risks, and evaluating risk process effectiveness throughout the
+project.
+
+34
+
+Deciding Risk Reduction Action
+• Some risks can be avoided or reduced
+immediately
+• For others decide based on;
+• Cost vs. Benefits
+• Risk Reduction Leverage (RRL)
+
+RE before – RE after
+RRL = ----------------------------------Risk Reduction Cost
+
+35
+
+14
+
+10/11/2025
+
+36
+
+Activity
+ABA association needs to find the total risk exposure to their
+project. The following table lists two major risks that ABA has
+identified, the probability of each risk, and the estimated
+delay each can cause. Complete the following table by
+calculating the total risk exposure.
+Risk Factor
+
+Probability
+
+1. Delay in purchasing required 0.8
+software to develop the
+media elements
+2. Video recording delay
+
+0.5
+
+Delay Risk
+(Days) Exposure
+45
+
+15
+
+Total risk exposure
+37
+
+15
+
+10/11/2025
+
+The following table lists some countermeasures identified to reduce
+the impact of the risks with ABA’s project. Find the most costeffective countermeasures to address the two risks.
+Risk Countermeasures
+
+Cost
+(Rs.)
+
+1.
+
+2.
+
+New Risk New total New Risk Risk
+Exposure Reduction
+Probability delay
+(days)
+Leverage
+
+A. Start
+the
+procurement
+process early by
+spending
+the
+deposits.
+
+10,000
+
+0.6
+
+30 days
+
+B. Obtain
+software
+from software-as-a
+service
+
+50,000
+
+0.7
+
+35 days
+
+C. Hire
+expert
+cameraman
+
+75,000
+
+0.3
+
+7 days
+
+D. Recruit
+another
+cameraman
+
+50,000
+
+0.4
+
+10 days
+
+38
+
+Evaluate the effects of uncertainty
+• Techniques to take account of the
+uncertainties in the duration of activities
+within a project
+• PERT (Program Evaluation Review Technique)
+• Monte Carlo /Probability simulation
+• Critical Chain Management
+
+40
+
+16
+
+10/11/2025
+
+Using PERT
+• Most likely time (m)
+• Optimistic time (a)
+• Pessimistic time (b)
+• (Single) Expected Duration (te)
+
+te = (a + 4m + b)/6
+
+• Activity Standard Deviation (s)
+s = (b – a)/6
+s  (b-a) is used to rank the measure of
+degree of uncertainty or risk of activity
+41
+
+Exercise 1: Calculate Te and S
+Activity
+A
+B
+C
+D
+E
+F
+G
+H
+
+a (wk)
+5
+3
+2
+3.5
+1
+8
+2
+2
+
+m (wk)
+6
+4
+3
+4
+3
+10
+3
+2
+
+b (wk)
+8
+5
+3
+5
+4
+15
+4
+2.5
+
+Te (wk)
+6.17
+
+s (wk)
+0.50
+
+2.83
+
+0.17
+
+2.83
+
+0.50
+
+2.08
+
+0.08
+
+42
+
+17
+
+10/11/2025
+
+Using expected duration
+• Used to carry out forward pass through a network
+• Uses the same method as CPM technique
+• Calculated event dates are the dates by which we expect to
+achieve those events
+Event
+Number
+
+Target
+date (T)
+
+Expected
+date (Te)
+
+Standard
+deviation
+
+43
+
+Probability of meeting/missing targets
+• The entire project as well as events may have target
+dates. Also, certain tasks may have to be completed
+by a target date
+• Three step method of calculating the probability of
+meeting/missing the target.
+1. Calculate the standard deviation for each event
+2. Calculate the z value for each event having a T
+3. Convert the z values into probabilities
+
+44
+
+18
+
+10/11/2025
+
+Calculating z value
+• Calculated for each node that has a target
+date
+• Equivalent to the number of standard
+deviations between node’s expected and
+target dates
+
+z = (T target – T expected) / s
+e.g., Z value for event 6 is;
+Z = (15-13.5)/1.22 = 1.23
+45
+
+Exercise 2
+• Calculate the z values for each of the events 4
+and 5.
+
+46
+
+19
+
+10/11/2025
+
+Convert z value into probability
+Z value of
+Event 6
+
+For event 6, there is a 11% risk of not
+meeting the target date
+In MS Excel, use =(1-NORM.S.DIST(z,TRUE))*100
+
+47
+
+Meeting the target: 89%
+Not meeting the target:
+11%
+
+48
+
+20
+
+10/11/2025
+
+Exercise 3
+(a) Calculate the te and s (b) Draw the PERT chart (c) Explain the
+possibility of meeting the following target dates.
+Target Dates: Project completion: 46, Event 5: 30 & Event 6: 38
+Activity Dependency
+T
+T
+T
+t
+s
+
+A
+B
+C
+D
+E
+F
+G
+H
+
+A
+A
+B
+C, D
+E, F
+G
+
+a
+
+m
+
+b
+
+8
+5
+1
+6
+2
+11
+4
+9
+
+10
+7
+2
+8
+3
+13
+6
+11
+
+12
+9
+3
+10
+5
+17
+8
+14
+
+e
+
+49
+
+Exercise 4
+• Describe the pros and cons of using PERT
+technique to identify project risks.
+
+54
+
+21
+
+10/11/2025
+
+Exercise 5
+• A s/w project has the following activity estimates.
+1. Draw the PERT network and find Te and SD of each activity.
+2. Find the critical path
+and expected
+duration of the
+project.
+3. The client wants the
+s/w in 38weeks.
+What is the
+probability of
+meeting this
+deadline?
+55
+
+Exercise 6 : Draw the PERT network diagram
+Activity
+Estimated Duration (in months)
+(A-F)
+Optimistic
+Most Likely
+Pessimistic
+1-2
+2
+2
+14
+1-3
+2
+8
+14
+1-4
+4
+4
+16
+2-5
+2
+2
+2
+3-5
+4
+10
+28
+4-6
+4
+10
+16
+5-6
+6
+12
+30
+1. Draw the project network diagram to find the critical path.
+2. Find the expected duration and the st. deviation for each activity.
+3. What is the expected duration of the project?
+4. What is the probability that the project will be completed eight
+months earlier than the expected duration of the project?
+Z
+0.50
+0.67
+1.00
+1.33
+2.00
+P
+0.3085
+0.2514 0.1587 0.0918 0.0228
+56
+
+22
+
+

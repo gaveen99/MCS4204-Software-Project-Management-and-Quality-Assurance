@@ -1,0 +1,453 @@
+10/25/2025
+
+MASTER OF COMPUTER SCIENCE/
+MASTER OF SCIENCE IN COMPUTER SCIENCE
+
+MCS4204- Software Project Management
+
+Topic 7: Project
+Communication Management
+Dr Thushani A. Weerasinghe
+taw@ucsc.cmb.ac.lk
+UNIVERSITY OF COLOMBO SCHOOL OF COMPUTING
+
+Dr Thushani A Weerasinghe
+1
+
+Project Communication
+• It is the exchange of project-specific information with the
+emphasis on creating understanding between the sender and
+the receiver.
+• Effective communication is important for the success of a
+project.
+• Timely and accurate information should be provided to all
+stakeholders.
+• Project information might need to be prepared in a variety of
+ways.
+• Team members need to receive feedback from the stakeholders.
+• For some members, soft skills are needed just as much or even
+more than technical skills.
+25 October 2025
+
+3
+
+3
+
+1
+
+10/25/2025
+
+Project Communication Management
+Processes
+1. Planning communications management
+determines the information and communications needs of
+the stakeholders. Who needs what information? When will
+they need it? How will the information be given to them?
+2. Managing communications
+involves creating, distributing, storing, retrieving, and
+disposing of project communications based on the
+communications management plan.
+3. Controlling communications
+• involves monitoring and controlling project communications
+to ensure that stakeholder communication needs are met.
+Master of Computer Science/ Master of Science in Computer Science
+
+25 October 2025
+
+4
+
+25 October 2025
+
+5
+
+4
+
+Project Communication …contd.
+
+Master of Computer Science/ Master of Science in Computer Science
+
+5
+
+2
+
+10/25/2025
+
+Keys to Good Communications
+1. Focusing on group and individual communication
+needs
+2. Identifying formal and informal methods for
+communicating
+3. Distributing important information in an effective
+and timely manner
+4. Setting the stage for communicating bad news
+5. Determining the number of communication
+channels (N).
+
+N= n(n–1)/2
+
+Master of Computer Science/ Master of Science in Computer Science
+
+25 October 2025
+
+6
+
+6
+
+Dimensions of Communication Activities
+• Internal - Focus on stakeholders within the project and
+within the organization.
+• External - Focus on external stakeholders such as
+customers, vendors, other projects and organizations,
+government, the public, and environmental advocates.
+• Formal - Reports, formal meetings (both regular and ad
+hoc), meeting agendas and minutes, stakeholder briefings,
+and presentations.
+• Informal - General communications activities using emails,
+social media, websites, and informal ad hoc discussions.
+Master of Computer Science/ Master of Science in Computer Science
+
+25 October 2025
+
+8
+
+8
+
+3
+
+10/25/2025
+
+Dimensions of Communication …contd.
+• Official - Annual reports; reports to regulators or
+government bodies.
+• Unofficial - Communications that focus on establishing
+and maintaining the profile and recognition of the
+project and building strong relationships between the
+project team and its stakeholders using flexible and
+often informal means.
+• Written and oral - Verbal (words and voice inflections)
+and nonverbal (body language and actions), social
+media and websites, and media releases.
+Master of Computer Science/ Master of Science in Computer Science
+
+25 October 2025
+
+9
+
+9
+
+Skills Required for Effective Communication
+•
+•
+•
+•
+•
+•
+•
+•
+•
+•
+
+Strong active listening
+Proficient writing
+Fluent speaking ability
+Questioning and exploring ideas
+Setting and managing expectations of stakeholders
+Motivating the team to provide encouragement
+Coaching the team to enhance performance
+Conflict resolution
+Ability to Summarize and reiterate
+Identify the next most efficient step
+Master of Computer Science/ Master of Science in Computer Science
+
+25 October 2025
+
+10
+
+10
+
+4
+
+10/25/2025
+
+5Cs of Written Communications
+• Correct grammar and spelling
+• Concise expression and elimination of excess words.
+• Clear purpose and expression directed to the needs
+of the reader
+• Coherent, logical flow of ideas
+• Controlling the flow of words and ideas
+
+Master of Computer Science/ Master of Science in Computer Science
+
+25 October 2025
+
+11
+
+11
+
+Trends & Emerging Practices in Project
+Communications Management
+• Inclusion of stakeholders in project reviews
+• Inclusion of stakeholders in project meetings
+• Increased use of social computing
+• Multifaceted approaches to communication
+
+Master of Computer Science/ Master of Science in Computer Science
+
+25 October 2025
+
+12
+
+12
+
+5
+
+10/25/2025
+
+PLANNING COMMUNICATION
+
+Master of Computer Science/ Master of Science in Computer Science
+
+25 October 2025
+
+13
+
+13
+
+Components of a
+Communication Management Plan
+1. Stakeholder communications requirements
+2. Information to be communicated, including format, content, and
+level of detail
+3. Who will receive the information and who will produce it
+4. Suggested methods or technologies for conveying the
+information
+5. Frequency of communication
+6. Escalation procedures for resolving issues
+7. Revision procedures for updating the communications
+management plan
+8. A glossary of common terminology
+Master of Computer Science/ Master of Science in Computer Science
+
+25 October 2025
+
+14
+
+14
+
+6
+
+10/25/2025
+
+Preparing
+Communication
+Plan
+
+15
+
+15
+
+Stakeholder Communications Analysis
+
+Master of Computer Science/ Master of Science in Computer Science
+
+25 October 2025
+
+16
+
+16
+
+7
+
+10/25/2025
+
+Project Communication Plan
+
+19
+
+MANAGING COMMUNICATION
+
+Master of Computer Science/ Master of Science in Computer Science
+
+25 October 2025
+
+22
+
+22
+
+8
+
+10/25/2025
+
+Managing Communication
+Getting project information to the right people at the
+right time and in a useful format.
+1. Use technology to enhance information creation
+and distribution
+• Project Management System or via e-mail, instant
+messaging, websites, telephones, cell phones,
+texting, and other technologies to communicate
+2. Select the appropriate communication methods and
+media
+3. Report performance
+23
+
+23
+
+Selecting the Appropriate Communication
+Methods and Media
+1. Interactive communication: Two or more people interact to
+exchange information via meetings, phone calls, or video-conf.
+This is the most effective way to ensure common
+understanding.
+2. Push communication: Information is sent or pushed to
+recipients without their request via reports, e-mails, faxes,
+voice mails, and other means. It ensures that the information is
+distributed but does not ensure that it was received or
+understood.
+3. Pull communication: Information is sent to recipients at their
+request via websites, bulletin boards, e-learning, knowledge
+repositories like blogs and wikis, and other means.
+24
+
+24
+
+9
+
+10/25/2025
+
+Determining Media Preferences
+
+Master of Computer Science/ Master of Science in Computer Science
+
+25 October 2025
+
+25
+
+25
+
+Managing Communication > Report
+performance
+• To keep stakeholders informed about how resources are
+being used to achieve project objectives.
+• Progress reports - describe what the project team has
+accomplished during a certain period
+• Status reports - describe where the project stands in
+terms of the triple constraints: scope, time, and cost.
+• Forecasts: predict future project status and progress
+based on past information and trends – Can use Earned
+Value Management
+• Conduct Status Review meetings
+Master of Computer Science/ Master of Science in Computer Science
+
+25 October 2025
+
+26
+
+26
+
+10
+
+10/25/2025
+
+CONTROLLING COMMUNICATION
+
+Master of Computer Science/ Master of Science in Computer Science
+
+25 October 2025
+
+29
+
+29
+
+Controlling Communications
+To ensure the optimal flow of information throughout
+the entire project life cycle.
+• INPUTS: Project management plan, Project
+communication plan, Issue logs, Work performance
+data, and Organizational process assets.
+• TECHNIQUES AND TOOLS: various reporting systems,
+expert judgment, and meetings
+• OUTPUT: Update project communication plan, work
+performance information, change requests, project
+documents, and organizational process assets.
+Master of Computer Science/ Master of Science in Computer Science
+
+25 October 2025
+
+30
+
+30
+
+11
+
+10/25/2025
+
+Suggestions for Improving Project
+Communications
+• Develop Better Communication Skills
+• Communication skills training, including role-playing
+activities to learn concepts such as building rapport,
+Strategies to build personal relationships and trust
+
+• Running Effective Meetings
+• A well-run meeting can be a vehicle for fostering team
+building and reinforcing expectations, roles, relationships,
+and commitment to the project. But a poorly run meeting
+can have a detrimental effect on a project.
+
+• Use e-Mail, Instant Messaging, Texting, Kanban
+Boards, and Collaborative Tools Effectively
+Master of Computer Science/ Master of Science in Computer Science
+
+25 October 2025
+
+31
+
+31
+
+A Guideline to help improve time spent at
+meetings
+1. Determine if a meeting can be avoided.
+2. Define the purpose and intended outcome of the
+meeting.
+3. Determine who should attend the meeting.
+4. Provide an agenda to participants before the meeting.
+5. Prepare handouts and visual aids and make logistical
+arrangements ahead of time.
+6. Run the meeting professionally.
+7. Set the ground rules for the meeting.
+8. Build relationships.
+Master of Computer Science/ Master of Science in Computer Science
+
+25 October 2025
+
+32
+
+32
+
+12
+
+10/25/2025
+
+Exercise:
+1. How to use emails more effectively as a
+communication tool?
+2. Compare features of collaborative working and
+content sharing platforms such as MS SharePoint
+and GoogleDoc.
+3. Study existing project management software such
+as Trello, Asana, ClickUp and Jira, and understand
+the facilities they provide for effective
+communication.
+Master of Computer Science/ Master of Science in Computer Science
+
+25 October 2025
+
+33
+
+33
+
+13
+
+
